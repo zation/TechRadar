@@ -67,14 +67,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 8, ../sass/screen.scss */
+/* line 3, ../sass/_base.scss */
 .scope {
   position: absolute;
   left: 50%;
   top: 50%;
 }
 
-/* line 14, ../sass/screen.scss */
+/* line 9, ../sass/_base.scss */
 #hold {
   width: 200px;
   height: 200px;
@@ -84,7 +84,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: 1px solid black;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 18, ../sass/_base.scss */
 #assess {
   width: 100px;
   height: 100px;
