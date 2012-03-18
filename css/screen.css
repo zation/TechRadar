@@ -67,13 +67,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 20, ../sass/_base.scss */
+/* line 17, ../sass/_scope.scss */
 .scope {
   position: absolute;
   left: 50%;
   top: 50%;
 }
-/* line 25, ../sass/_base.scss */
+/* line 22, ../sass/_scope.scss */
 .scope header {
   display: inline-block;
   background-color: white;
@@ -86,7 +86,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(10deg);
 }
 
-/* line 34, ../sass/_base.scss */
+/* line 31, ../sass/_scope.scss */
 #hold {
   width: 600px;
   height: 600px;
@@ -95,13 +95,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 301px;
   border: 1px solid black;
 }
-/* line 11, ../sass/_base.scss */
+/* line 11, ../sass/_scope.scss */
 #hold header {
   left: 300px;
   top: -5px;
 }
 
-/* line 38, ../sass/_base.scss */
+/* line 35, ../sass/_scope.scss */
 #assess {
   width: 480px;
   height: 480px;
@@ -110,13 +110,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 244px;
   border: 4px double black;
 }
-/* line 11, ../sass/_base.scss */
+/* line 11, ../sass/_scope.scss */
 #assess header {
   left: 240px;
   top: -5px;
 }
 
-/* line 42, ../sass/_base.scss */
+/* line 39, ../sass/_scope.scss */
 #trial {
   width: 360px;
   height: 360px;
@@ -125,13 +125,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 181px;
   border: 1px solid black;
 }
-/* line 11, ../sass/_base.scss */
+/* line 11, ../sass/_scope.scss */
 #trial header {
   left: 180px;
   top: -5px;
 }
 
-/* line 46, ../sass/_base.scss */
+/* line 43, ../sass/_scope.scss */
 #adopt {
   width: 240px;
   height: 240px;
@@ -140,8 +140,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 121px;
   border: 1px solid black;
 }
-/* line 11, ../sass/_base.scss */
+/* line 11, ../sass/_scope.scss */
 #adopt header {
   left: 120px;
   top: -5px;
+}
+
+/* line 47, ../sass/_scope.scss */
+.vertical-line, .horizontal-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  margin: 0 0 0 -350px;
+}
+
+/* line 56, ../sass/_scope.scss */
+.vertical-line {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 1, ../sass/_points.scss */
+#points li {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  background-color: white;
+}
+
+/* line 9, ../sass/_points.scss */
+.unchanged:before {
+  content: "\25B2";
+}
+
+/* line 13, ../sass/_points.scss */
+.changed:before {
+  content: "\25A3";
 }

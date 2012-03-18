@@ -1,0 +1,15 @@
+#points li {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  background-color: white;
+}
+
+.unchanged:before {
+  content: "\25B2";
+}
+
+.changed:before {
+  content: "\25A3";
+}

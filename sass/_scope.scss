@@ -1,0 +1,58 @@
+@import "compass/css3/transform";
+
+@mixin special-scope($radius-length, $border-width, $border-type) {
+  width: $radius-length * 2;
+  height: $radius-length * 2;
+  margin-left: 0 - $radius-length - $border-width;
+  margin-top: 0 - $radius-length - $border-width;
+  border-radius: $radius-length + $border-width;
+  border: $border-width $border-type black;
+
+  header {
+    left: $radius-length;
+    top: -5px;
+  }
+}
+
+.scope {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  header {
+    display: inline-block;
+    background-color: white;
+    position: absolute;
+    padding: 0 10px;
+    @include rotate(10deg);
+  }
+}
+
+#hold {
+  @include special-scope(300px, 1px, solid);
+}
+
+#assess {
+  @include special-scope(240px, 4px, double);
+}
+
+#trial {
+  @include special-scope(180px, 1px, solid);
+}
+
+#adopt {
+  @include special-scope(120px, 1px, solid);
+}
+
+.vertical-line, .horizontal-line {
+  $line-length: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: $line-length;
+  margin: 0 0 0 0-( $line-length / 2 );
+}
+
+.vertical-line {
+  @include rotate(90deg);
+}
