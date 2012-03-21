@@ -164,7 +164,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(90deg);
 }
 
-/* line 1, ../sass/_points.scss */
+/* line 3, ../sass/_points.scss */
 #points li {
   position: absolute;
   top: 50%;
@@ -173,12 +173,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: white;
 }
 
-/* line 9, ../sass/_points.scss */
+/* line 11, ../sass/_points.scss */
 .unchanged:before {
   content: "\25B2";
 }
 
-/* line 13, ../sass/_points.scss */
+/* line 15, ../sass/_points.scss */
 .changed:before {
   content: "\25A3";
 }
