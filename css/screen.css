@@ -175,18 +175,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 11, ../sass/_points.scss */
 .unchanged:before {
-  content: "\25B2";
+  content: "\25A3";
 }
 
 /* line 15, ../sass/_points.scss */
 .changed:before {
-  content: "\25A3";
+  content: "\25B2";
 }
 
-/* line 19, ../sass/_points.scss */
-.tips {
+/* line 20, ../sass/_points.scss */
+.tips,
+.operations {
+  width: 200px;
   border: 1px solid black;
+}
+
+/* line 26, ../sass/_points.scss */
+.tips legend,
+.operations legend {
+  padding: 0 5px;
+}
+
+/* line 30, ../sass/_points.scss */
+.tips {
   margin: 10px;
   padding: 10px;
-  position: absolute;
+}
+
+/* line 35, ../sass/_points.scss */
+.operations {
+  margin: 10px;
+  padding: 10px;
 }
