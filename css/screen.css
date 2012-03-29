@@ -207,3 +207,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: 10px;
   padding: 10px;
 }
+
+/* line 1, ../sass/_dialog.scss */
+#point-detail {
+  display: none;
+}
+
+/* line 5, ../sass/_dialog.scss */
+#description {
+  width: 400px;
+  border: 1px solid black;
+  line-height: 25px;
+  padding: 5px;
+  margin: 10px 2px;
+  background-color: white;
+}

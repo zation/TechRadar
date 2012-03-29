@@ -1,4 +1,4 @@
-var Point_Presenter = (function() {
+Presenter.Point = (function() {
   var template = '<li></li>';
 
   function initialize_element(point) {
@@ -11,7 +11,7 @@ var Point_Presenter = (function() {
       .addClass(point.type);
   }
 
-  function Point_Presenter(options) {
+  function Point(options) {
     var defaults = {
       name: 'New Point',
       coordinate: {
@@ -23,13 +23,13 @@ var Point_Presenter = (function() {
       quadrant: 'none_quadrant',
       description: ''
     };
-    var settings = $.extend({}, defaults, options);;
+    var settings = $.extend({}, defaults, options);
 
-    this.point = new Point(settings);
+    this.point = new Model.Point(settings);
     this.el = initialize_element(this.point);
   }
 
-  Point_Presenter.prototype = {
+  Point.prototype = {
     set_coordinate: function(coordinate, z_index) {
       var css_options = {
         'margin-left': coordinate.x,
@@ -42,44 +42,26 @@ var Point_Presenter = (function() {
       this.point.set_coordinate(coordinate);
     },
 
+    set_name: function(name) {
+      this.el.text(name);
+      this.point.set_name(name);
+    },
+
+    save: function(options) {
+      for (key in options) {
+        if (options.hasOwnProperty(key))
+          this.point[key] = options[key];
+      }
+    },
+
     get_name: function() {
       return this.point.name;
     },
 
     get_description: function() {
       return this.point.description;
-    },
-
-    set_name: function(name) {
-      this.el.text(name);
-      this.point.set_name(name);
     }
   };
 
-  return Point_Presenter;
-})();
-
-var Dialog = (function(){
-  function Dialog() {
-    this.el = $('#point-detail');
-  }
-
-  Dialog.prototype = {
-    open: function(point) {
-      this.el.dialog({
-        title: point.get_name(),
-        modal: true
-      });
-    },
-
-    set_text: function(text) {
-      this.el.text(text);
-    },
-
-    close: function() {
-      this.el.dialog('close');
-    }
-  }
-
-  return Dialog;
+  return Point;
 })();
