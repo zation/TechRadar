@@ -19,9 +19,10 @@ Collection.Points = (function() {
     },
 
     remove: function(point) {
-      for (var i = 0; i < this.points.length; i++) {
-        if (this.points[i].is_equal(point)) {
-          return this.points.splice(i, 1);
+      for (var i = 0; i < this.list.length; i++) {
+        if (this.list[i].is_equal(point)) {
+          point.remove();
+          return this.list.splice(i, 1);
         }
       }
       return false;

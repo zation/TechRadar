@@ -54,12 +54,20 @@ Presenter.Point = (function() {
       }
     },
 
+    remove: function() {
+      this.el.remove();
+    },
+
     get_name: function() {
       return this.point.name;
     },
 
     get_description: function() {
       return this.point.description;
+    },
+
+    is_equal: function(target) {
+      return this == target;
     }
   };
 

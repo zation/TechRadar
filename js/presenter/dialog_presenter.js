@@ -7,11 +7,18 @@ Presenter.Dialog = (function() {
   function get_buttons(dialog, point) {
     return [
       {
-        text: "Save",
+        text: 'Save',
         click: function() {
           point.save({
             description: dialog.get_text()
           });
+          dialog.close();
+        }
+      },
+      {
+        text: 'Remove',
+        click: function() {
+          points.remove(point);
           dialog.close();
         }
       }
