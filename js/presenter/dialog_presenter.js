@@ -9,9 +9,8 @@ Presenter.Dialog = (function() {
       {
         text: 'Save',
         click: function() {
-          point.save({
-            description: dialog.get_text()
-          });
+          point.set_description(dialog.get_text());
+          point.set_type(dialog.get_type());
           dialog.close();
         }
       },
@@ -35,6 +34,9 @@ Presenter.Dialog = (function() {
         open: function() {
           _this.set_text(point.get_description());
           _this.point = point;
+          _this.el.find('#' + point.get_type()).attr('checked', 'checked');
+          $('#type').buttonset('refresh');
+          _this.el.find('#description').focus();
         },
         buttons: get_buttons(_this, point)
       });
@@ -46,6 +48,10 @@ Presenter.Dialog = (function() {
 
     get_text: function() {
       return this.el.find('#description').text();
+    },
+
+    get_type: function() {
+      return this.el.find(':radio[name="type"]:checked').val();
     },
 
     close: function() {

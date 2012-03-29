@@ -214,6 +214,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 5, ../sass/_dialog.scss */
+#point-detail div {
+  margin: 10px 0;
+}
+
+/* line 9, ../sass/_dialog.scss */
 #description {
   width: 400px;
   border: 1px solid black;

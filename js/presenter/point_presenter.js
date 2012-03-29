@@ -42,6 +42,16 @@ Presenter.Point = (function() {
       this.point.set_coordinate(coordinate);
     },
 
+    set_description: function(descritpion) {
+      this.point.description = descritpion;
+    },
+
+    set_type: function(type) {
+      this.el.removeClass();
+      this.el.addClass(type);
+      this.point.type = type;
+    },
+
     set_name: function(name) {
       this.el.text(name);
       this.point.set_name(name);
@@ -64,6 +74,10 @@ Presenter.Point = (function() {
 
     get_description: function() {
       return this.point.description;
+    },
+
+    get_type: function() {
+      return this.point.type;
     },
 
     is_equal: function(target) {

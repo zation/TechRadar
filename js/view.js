@@ -8,6 +8,10 @@ var center_x;
 var center_y;
 var current_point;
 
+function initialize_actions() {
+  $('#type').buttonset();
+}
+
 function initialize_points() {
   $('body').append(points.el);
   for (var point_name in _db) {
