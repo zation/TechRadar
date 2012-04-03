@@ -1,6 +1,7 @@
 var is_dragging = false;
 var points = new Collection.Points();
-var point_dialog = new Presenter.Dialog();
+var point_dialog = new Presenter.Dialog.Point();
+var export_dialog = new Presenter.Dialog.Export();
 var z_index = 0;
 var offset_x;
 var offset_y;
@@ -10,7 +11,8 @@ var current_point;
 
 function initialize_textarea() {
   $('#description, #export-db textarea').autoResize({
-    maxHeight: 600
+    maxHeight: 600,
+    extraSpace: 20
   });
 }
 
@@ -65,13 +67,7 @@ function add_point() {
 function export_points() {
   $('#export').on('click', function(event) {
     event.preventDefault();
-    $('#export-db').dialog({
-      modal: true,
-      width: 'auto',
-      open: function() {
-        $(this).find('textarea').text(points.toJSON());
-      }
-    })
+    export_dialog.open(points.toJSON());
   });
 }
 

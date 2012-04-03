@@ -1,5 +1,27 @@
-Presenter.Dialog = (function() {
-  function Dialog() {
+Presenter.Dialog = {};
+
+Presenter.Dialog.Export = (function() {
+  function Export() {
+    this.el = $('#export-db');
+  }
+
+  Export.prototype = {
+    open: function(db) {
+      this.el.dialog({
+        modal: true,
+        width: 'auto',
+        open: function() {
+          $(this).find('textarea').val(db);
+        }
+      })
+    }
+  };
+
+  return Export;
+})();
+
+Presenter.Dialog.Point = (function() {
+  function Point() {
     this.el = $('#point-detail');
     this.point = undefined;
   }
@@ -24,7 +46,7 @@ Presenter.Dialog = (function() {
     ];
   }
 
-  Dialog.prototype = {
+  Point.prototype = {
     open: function(point) {
       var point_dialog = this;
       point_dialog.el.dialog({
@@ -60,5 +82,5 @@ Presenter.Dialog = (function() {
     }
   };
 
-  return Dialog;
+  return Point;
 })();

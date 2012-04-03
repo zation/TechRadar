@@ -26,11 +26,14 @@
 <fieldset class="tips">
   <legend>Tips</legend>
   <ul>
-    <li class="changed">
-      New or moved
-    </li>
     <li class="unchanged">
       No change
+    </li>
+    <li class="changed">
+      Moved
+    </li>
+    <li class="new">
+      New
     </li>
   </ul>
 </fieldset>
@@ -38,7 +41,7 @@
 <fieldset class="operations">
   <legend>Operations</legend>
   <ul>
-    <li id="add-point" class="changed">
+    <li id="add-point">
       <a href="#">Drag to add a new point</a>
     </li>
     <li id="export">
@@ -53,6 +56,8 @@
     <input tabindex="2" type="radio" id="unchanged" value="unchanged" name="type">
     <label for="changed">Changed</label>
     <input tabindex="3" type="radio" id="changed" value="changed" name="type" value="Changed">
+    <label for="new">New</label>
+    <input tabindex="2" type="radio" id="new" value="new" name="type">
   </div>
   
   <textarea contenteditable="true" id="description"></textarea>

@@ -6,7 +6,7 @@ Model.Point = (function() {
         x: 0,
         y: 0
       },
-      type: 'changed',
+      type: 'new',
       scope: 'none_scope',
       quadrant: 'none_quadrant',
       description: ''

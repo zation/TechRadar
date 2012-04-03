@@ -118,7 +118,7 @@
 
       this.el
         //MODIFIED: add focus event handle to check the height of the textarea
-        //and in order to resize after the text is updated, set up a timeout.
+        //and set up a timeout in order to resize after the text is updated.
         .bind('focus.autoResize', function() {
           setTimeout(function() { check(); }, 100);
         })
