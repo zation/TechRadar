@@ -29,23 +29,23 @@
 }
 
 #hold {
-  @include special-scope(300px, 1px, solid);
+  @include special-scope(450px, 1px, solid);
 }
 
 #assess {
-  @include special-scope(240px, 4px, double);
+  @include special-scope(360px, 4px, double);
 }
 
 #trial {
-  @include special-scope(180px, 1px, solid);
+  @include special-scope(280px, 1px, solid);
 }
 
 #adopt {
-  @include special-scope(120px, 1px, solid);
+  @include special-scope(160px, 1px, solid);
 }
 
 .vertical-line, .horizontal-line {
-  $line-length: 700px;
+  $line-length: 1000px;
   position: absolute;
   top: 50%;
   left: 50%;

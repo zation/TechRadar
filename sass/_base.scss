@@ -3,8 +3,26 @@ $basic-font-size: 16px;
 @import "scope";
 @import "points";
 @import "dialog";
-@import "sideBar";
+@import "sidebar";
 
 body {
   font-size: $basic-font-size;
+}
+
+.sidebar,
+.content {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.content {
+  position: relative;
+  width: 1050px;
+  height: 1050px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }

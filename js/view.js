@@ -49,9 +49,39 @@ function setCoordinate(event) {
 }
 
 function getCoordinate(event) {
+
+  function validated_calculated_x(calculated_x) {
+    var right_boundary = content.width() / 2 - current_point.el.width();
+    var left_boundary = -content.width() / 2;
+
+    if (calculated_x > right_boundary) {
+      calculated_x = right_boundary;
+    }
+    else if (calculated_x < left_boundary) {
+      calculated_x = left_boundary
+    }
+    return calculated_x;
+  }
+
+  function validated_calculated_y(calculated_y) {
+    var bottom_boundary = content.height() / 2 - current_point.el.height();
+    var top_boundary = -content.height() / 2;
+
+    if (calculated_y > bottom_boundary) {
+      calculated_y = bottom_boundary;
+    }
+    else if (calculated_y < top_boundary) {
+      calculated_y = top_boundary;
+    }
+    return calculated_y;
+  }
+
+  var calculated_x = event.clientX - center_x - offset_x;
+  var calculated_y = event.clientY - center_y - offset_y;
+
   return {
-    y: event.clientY - center_y - offset_y,
-    x: event.clientX - center_x - offset_x
+    x: validated_calculated_x(calculated_x),
+    y: validated_calculated_y(calculated_y)
   }
 }
 

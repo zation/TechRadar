@@ -88,61 +88,61 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 31, ../sass/_scope.scss */
 #hold {
-  width: 600px;
-  height: 600px;
-  margin-left: -301px;
-  margin-top: -301px;
-  border-radius: 301px;
+  width: 900px;
+  height: 900px;
+  margin-left: -451px;
+  margin-top: -451px;
+  border-radius: 451px;
   border: 1px solid black;
 }
 /* line 11, ../sass/_scope.scss */
 #hold header {
-  left: 300px;
+  left: 450px;
   top: -5px;
 }
 
 /* line 35, ../sass/_scope.scss */
 #assess {
-  width: 480px;
-  height: 480px;
-  margin-left: -244px;
-  margin-top: -244px;
-  border-radius: 244px;
+  width: 720px;
+  height: 720px;
+  margin-left: -364px;
+  margin-top: -364px;
+  border-radius: 364px;
   border: 4px double black;
 }
 /* line 11, ../sass/_scope.scss */
 #assess header {
-  left: 240px;
+  left: 360px;
   top: -5px;
 }
 
 /* line 39, ../sass/_scope.scss */
 #trial {
-  width: 360px;
-  height: 360px;
-  margin-left: -181px;
-  margin-top: -181px;
-  border-radius: 181px;
+  width: 560px;
+  height: 560px;
+  margin-left: -281px;
+  margin-top: -281px;
+  border-radius: 281px;
   border: 1px solid black;
 }
 /* line 11, ../sass/_scope.scss */
 #trial header {
-  left: 180px;
+  left: 280px;
   top: -5px;
 }
 
 /* line 43, ../sass/_scope.scss */
 #adopt {
-  width: 240px;
-  height: 240px;
-  margin-left: -121px;
-  margin-top: -121px;
-  border-radius: 121px;
+  width: 320px;
+  height: 320px;
+  margin-left: -161px;
+  margin-top: -161px;
+  border-radius: 161px;
   border: 1px solid black;
 }
 /* line 11, ../sass/_scope.scss */
 #adopt header {
-  left: 120px;
+  left: 160px;
   top: -5px;
 }
 
@@ -151,8 +151,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 700px;
-  margin: 0 0 0 -350px;
+  width: 1000px;
+  margin: 0 0 0 -500px;
 }
 
 /* line 56, ../sass/_scope.scss */
@@ -170,29 +170,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: 50%;
   left: 50%;
   cursor: pointer;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   padding-left: 5px;
+  white-space: nowrap;
 }
 
-/* line 14, ../sass/_points.scss */
+/* line 15, ../sass/_points.scss */
 .unchanged:before,
 .changed:before,
 .new:before {
   padding-right: 2px;
+  color: #11A2E1;
 }
 
-/* line 18, ../sass/_points.scss */
+/* line 20, ../sass/_points.scss */
 .unchanged:before {
   content: "\25B2";
   font-size: 12px;
 }
 
-/* line 23, ../sass/_points.scss */
+/* line 25, ../sass/_points.scss */
 .changed:before {
   content: "\2726";
 }
 
-/* line 27, ../sass/_points.scss */
+/* line 29, ../sass/_points.scss */
 .new:before {
   content: "\2738";
 }
@@ -233,31 +235,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 600px;
 }
 
-/* line 1, ../sass/_sideBar.scss */
+/* line 1, ../sass/_sidebar.scss */
 .tips li {
   margin-bottom: 5px;
 }
 
-/* line 6, ../sass/_sideBar.scss */
+/* line 6, ../sass/_sidebar.scss */
 .tips,
 .operations {
   width: 200px;
   border: 1px solid black;
 }
 
-/* line 12, ../sass/_sideBar.scss */
+/* line 12, ../sass/_sidebar.scss */
 .tips legend,
 .operations legend {
   padding: 0 5px;
 }
 
-/* line 16, ../sass/_sideBar.scss */
+/* line 16, ../sass/_sidebar.scss */
 .tips {
   margin: 10px;
   padding: 10px;
 }
 
-/* line 21, ../sass/_sideBar.scss */
+/* line 21, ../sass/_sidebar.scss */
 .operations {
   margin: 10px;
   padding: 10px;
@@ -266,4 +268,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 8, ../sass/_base.scss */
 body {
   font-size: 16px;
+}
+
+/* line 13, ../sass/_base.scss */
+.sidebar,
+.content {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 18, ../sass/_base.scss */
+.content {
+  position: relative;
+  width: 1050px;
+  height: 1050px;
+}
+
+/* line 24, ../sass/_base.scss */
+.sidebar {
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }
