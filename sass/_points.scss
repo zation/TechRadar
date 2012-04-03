@@ -3,8 +3,9 @@
   top: 50%;
   left: 50%;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding-left: 5px;
+  background-color: white;
+  box-shadow: 0 0 3px 3px white;
+  line-height: 4px;
   white-space: nowrap;
   font-size: $basic-font-size - 2;
 }
