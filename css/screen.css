@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../.rvm/gems/ruby-1.9.2-p290@TechRadar/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, /Users/twer/.rvm/gems/ruby-1.9.2-p290@TechRadar/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,56 +24,56 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../.rvm/gems/ruby-1.9.2-p290@TechRadar/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, /Users/twer/.rvm/gems/ruby-1.9.2-p290@TechRadar/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-1.9.2-p290@TechRadar/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, /Users/twer/.rvm/gems/ruby-1.9.2-p290@TechRadar/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p290@TechRadar/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, /Users/twer/.rvm/gems/ruby-1.9.2-p290@TechRadar/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-1.9.2-p290@TechRadar/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, /Users/twer/.rvm/gems/ruby-1.9.2-p290@TechRadar/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-1.9.2-p290@TechRadar/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, /Users/twer/.rvm/gems/ruby-1.9.2-p290@TechRadar/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../.rvm/gems/ruby-1.9.2-p290@TechRadar/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, /Users/twer/.rvm/gems/ruby-1.9.2-p290@TechRadar/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-1.9.2-p290@TechRadar/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, /Users/twer/.rvm/gems/ruby-1.9.2-p290@TechRadar/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../../.rvm/gems/ruby-1.9.2-p290@TechRadar/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, /Users/twer/.rvm/gems/ruby-1.9.2-p290@TechRadar/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 17, ../sass/_scope.scss */
+/* line 17, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
 .scope {
   position: absolute;
   left: 50%;
   top: 50%;
 }
-/* line 22, ../sass/_scope.scss */
+/* line 22, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
 .scope header {
   display: inline-block;
   background-color: white;
@@ -86,7 +86,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(10deg);
 }
 
-/* line 31, ../sass/_scope.scss */
+/* line 31, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
 #hold {
   width: 600px;
   height: 600px;
@@ -95,13 +95,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 301px;
   border: 1px solid black;
 }
-/* line 11, ../sass/_scope.scss */
+/* line 11, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
 #hold header {
   left: 300px;
   top: -5px;
 }
 
-/* line 35, ../sass/_scope.scss */
+/* line 35, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
 #assess {
   width: 480px;
   height: 480px;
@@ -110,13 +110,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 244px;
   border: 4px double black;
 }
-/* line 11, ../sass/_scope.scss */
+/* line 11, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
 #assess header {
   left: 240px;
   top: -5px;
 }
 
-/* line 39, ../sass/_scope.scss */
+/* line 39, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
 #trial {
   width: 360px;
   height: 360px;
@@ -125,13 +125,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 181px;
   border: 1px solid black;
 }
-/* line 11, ../sass/_scope.scss */
+/* line 11, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
 #trial header {
   left: 180px;
   top: -5px;
 }
 
-/* line 43, ../sass/_scope.scss */
+/* line 43, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
 #adopt {
   width: 240px;
   height: 240px;
@@ -140,13 +140,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 121px;
   border: 1px solid black;
 }
-/* line 11, ../sass/_scope.scss */
+/* line 11, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
 #adopt header {
   left: 120px;
   top: -5px;
 }
 
-/* line 47, ../sass/_scope.scss */
+/* line 47, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
 .vertical-line, .horizontal-line {
   position: absolute;
   top: 50%;
@@ -155,7 +155,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: 0 0 0 -350px;
 }
 
-/* line 56, ../sass/_scope.scss */
+/* line 56, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
 .vertical-line {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -164,7 +164,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(90deg);
 }
 
-/* line 3, ../sass/_points.scss */
+/* line 3, /Users/twer/Documents/Projects/github/TechRadar/sass/_points.scss */
 #points li {
   position: absolute;
   top: 50%;
@@ -173,56 +173,62 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: white;
 }
 
-/* line 11, ../sass/_points.scss */
+/* line 11, /Users/twer/Documents/Projects/github/TechRadar/sass/_points.scss */
 .unchanged:before {
   content: "\25A3";
 }
 
-/* line 15, ../sass/_points.scss */
+/* line 15, /Users/twer/Documents/Projects/github/TechRadar/sass/_points.scss */
 .changed:before {
   content: "\25B2";
 }
 
-/* line 20, ../sass/_points.scss */
+/* line 20, /Users/twer/Documents/Projects/github/TechRadar/sass/_points.scss */
 .tips,
 .operations {
   width: 200px;
   border: 1px solid black;
 }
 
-/* line 26, ../sass/_points.scss */
+/* line 26, /Users/twer/Documents/Projects/github/TechRadar/sass/_points.scss */
 .tips legend,
 .operations legend {
   padding: 0 5px;
 }
 
-/* line 30, ../sass/_points.scss */
+/* line 30, /Users/twer/Documents/Projects/github/TechRadar/sass/_points.scss */
 .tips {
   margin: 10px;
   padding: 10px;
 }
 
-/* line 35, ../sass/_points.scss */
+/* line 35, /Users/twer/Documents/Projects/github/TechRadar/sass/_points.scss */
 .operations {
   margin: 10px;
   padding: 10px;
 }
 
-/* line 1, ../sass/_dialog.scss */
+/* line 1, /Users/twer/Documents/Projects/github/TechRadar/sass/_dialog.scss */
 #point-detail {
   display: none;
 }
 
-/* line 5, ../sass/_dialog.scss */
+/* line 5, /Users/twer/Documents/Projects/github/TechRadar/sass/_dialog.scss */
 #point-detail div {
   margin: 10px 0;
 }
 
-/* line 9, ../sass/_dialog.scss */
+/* line 9, /Users/twer/Documents/Projects/github/TechRadar/sass/_dialog.scss */
 #description {
   width: 400px;
-  border: 1px solid black;
-  line-height: 25px;
   padding: 5px;
   background-color: white;
+  word-wrap: break-word;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 20, /Users/twer/Documents/Projects/github/TechRadar/sass/_dialog.scss */
+#export-db {
+  display: none;
 }

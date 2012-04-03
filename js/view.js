@@ -48,18 +48,24 @@ function add_point() {
   $('#add-point').on('mousedown', function(event) {
     event.preventDefault();
 
-    var point = new Presenter.Point({
-      name: 'New Point',
-      coordinate: getCoordinate(event),
-      type: 'changed',
-      scope: 'none_scope',
-      quadrant: 'none_quadrant',
-      description: ''
-    });
+    var point = new Presenter.Point();
     points.add(point);
 
     current_point = point;
     setCoordinate(event);
+  });
+}
+
+function export_points() {
+  $('#export').on('click', function(event) {
+    event.preventDefault();
+    $('#export-db').dialog({
+      modal: true,
+      open: function() {
+        console.log(points.toJSON())
+        $(this).find('textarea').text(points.toJSON());
+      }
+    })
   });
 }
 

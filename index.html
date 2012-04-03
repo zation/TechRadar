@@ -41,6 +41,9 @@
     <li id="add-point" class="changed">
       <a href="#">Drag to add a new point</a>
     </li>
+    <li id="export">
+      <a href="#">Export</a>
+    </li>
   </ul>
 </fieldset>
 
@@ -51,8 +54,12 @@
     <label for="changed">Changed</label>
     <input tabindex="3" type="radio" id="changed" value="changed" name="type" value="Changed">
   </div>
+  
+  <textarea contenteditable="true" id="description"></textarea>
+</div>
 
-  <div tabindex="1" contenteditable="true" id="description"></div>
+<div id="export-db" title="Export">
+  <textarea></textarea>
 </div>
 
 <script type="text/javascript" src="js/lib/jquery-1.7.1.min.js"></script>

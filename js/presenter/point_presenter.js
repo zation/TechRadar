@@ -12,20 +12,7 @@ Presenter.Point = (function() {
   }
 
   function Point(options) {
-    var defaults = {
-      name: 'New Point',
-      coordinate: {
-        x: 0,
-        y: 0
-      },
-      type: 'changed',
-      scope: 'none_scope',
-      quadrant: 'none_quadrant',
-      description: ''
-    };
-    var settings = $.extend({}, defaults, options);
-
-    this.point = new Model.Point(settings);
+    this.point = new Model.Point(options);
     this.el = initialize_element(this.point);
   }
 

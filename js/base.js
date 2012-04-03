@@ -4,4 +4,5 @@ $(document).ready(function() {
   drag_point();
   view_point();
   add_point();
+  export_points();
 });

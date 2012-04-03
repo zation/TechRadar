@@ -18,6 +18,16 @@ Collection.Points = (function() {
       }
     },
 
+    toJSON: function() {
+      var result_JSON = {};
+      var point;
+      for (var i = 0; i < this.list.length; i++) {
+        point = this.list[i].point;
+        result_JSON[point.name] = point;
+      }
+      return 'var _db = ' + JSON.stringify(result_JSON);
+    },
+
     remove: function(point) {
       for (var i = 0; i < this.list.length; i++) {
         if (this.list[i].is_equal(point)) {

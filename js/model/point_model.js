@@ -1,6 +1,18 @@
 Model.Point = (function() {
   function Point(options) {
-    $.extend(true, this, options);
+    var defaults = {
+      name: 'New Point',
+      coordinate: {
+        x: 0,
+        y: 0
+      },
+      type: 'changed',
+      scope: 'none_scope',
+      quadrant: 'none_quadrant',
+      description: ''
+    };
+
+    $.extend(this, defaults, options);
   }
 
   Point.prototype = {
