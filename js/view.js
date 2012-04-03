@@ -10,6 +10,19 @@ var center_y;
 var current_point;
 var content = $('.content');
 
+function initialize_layout() {
+  function resize_content_width() {
+    var calculate_width = $(window).width() - $('.sidebar').width();
+    if (calculate_width > $('.content').height())
+      $('.content').width($(window).width() - $('.sidebar').width());
+  }
+
+  resize_content_width();
+  $(window).on('resize', function() {
+    resize_content_width();
+  });
+}
+
 function initialize_textarea() {
   $('#description, #export-db textarea').autoResize({
     maxHeight: 600,

@@ -6,4 +6,5 @@ $(document).ready(function() {
   add_point();
   export_points();
   initialize_textarea();
+  initialize_layout();
 });
