@@ -72,8 +72,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: absolute;
   left: 50%;
   top: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: default;
 }
-/* line 22, ../sass/_scope.scss */
+/* line 24, ../sass/_scope.scss */
 .scope header {
   display: inline-block;
   background-color: white;
@@ -90,7 +94,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: bold;
 }
 
-/* line 35, ../sass/_scope.scss */
+/* line 37, ../sass/_scope.scss */
 #hold {
   width: 900px;
   height: 900px;
@@ -105,7 +109,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: -6px;
 }
 
-/* line 39, ../sass/_scope.scss */
+/* line 41, ../sass/_scope.scss */
 #assess {
   width: 720px;
   height: 720px;
@@ -120,7 +124,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: -10px;
 }
 
-/* line 43, ../sass/_scope.scss */
+/* line 45, ../sass/_scope.scss */
 #trial {
   width: 560px;
   height: 560px;
@@ -135,7 +139,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: -6px;
 }
 
-/* line 47, ../sass/_scope.scss */
+/* line 49, ../sass/_scope.scss */
 #adopt {
   width: 320px;
   height: 320px;
@@ -150,7 +154,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: -6px;
 }
 
-/* line 51, ../sass/_scope.scss */
+/* line 53, ../sass/_scope.scss */
 .vertical-line, .horizontal-line {
   position: absolute;
   top: 50%;
@@ -162,7 +166,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: #bebebe;
 }
 
-/* line 63, ../sass/_scope.scss */
+/* line 65, ../sass/_scope.scss */
 .vertical-line {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -182,9 +186,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: 4px;
   white-space: nowrap;
   font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
-/* line 15, ../sass/_points.scss */
+/* line 16, ../sass/_points.scss */
 .unchanged:before,
 .changed:before,
 .new:before {
@@ -193,18 +200,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: 1px 1px 1px gray;
 }
 
-/* line 21, ../sass/_points.scss */
+/* line 22, ../sass/_points.scss */
 .unchanged:before {
   content: "\25B2";
   font-size: 12px;
 }
 
-/* line 26, ../sass/_points.scss */
+/* line 27, ../sass/_points.scss */
 .changed:before {
   content: "\2726";
 }
 
-/* line 30, ../sass/_points.scss */
+/* line 31, ../sass/_points.scss */
 .new:before {
   content: "\2738";
 }

@@ -8,6 +8,7 @@
   line-height: 4px;
   white-space: nowrap;
   font-size: $basic-font-size - 2;
+  @include user-select(none);
 }
 
 .unchanged:before,

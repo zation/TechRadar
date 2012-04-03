@@ -18,6 +18,8 @@ $scope-basic-color: #BEBEBE;
   position: absolute;
   left: 50%;
   top: 50%;
+  @include user-select(none);
+  cursor: default;
 
   header {
     display: inline-block;
