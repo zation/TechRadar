@@ -1,16 +1,18 @@
 @import "compass/css3/transform";
 
+$scope-basic-color: #BEBEBE;
+
 @mixin special-scope($radius-length, $border-width, $border-type) {
   width: $radius-length * 2;
   height: $radius-length * 2;
   margin-left: 0 - $radius-length - $border-width;
   margin-top: 0 - $radius-length - $border-width;
   border-radius: $radius-length + $border-width;
-  border: $border-width $border-type black;
+  border: $border-width $border-type $scope-basic-color;
 
   header {
     left: $radius-length;
-    top: -5px;
+    top: -4 - $border-width;
   }
 }
 
@@ -24,24 +26,26 @@
     background-color: white;
     position: absolute;
     padding: 0 10px;
-    @include rotate(10deg);
+    @include rotate(6deg);
+    font-size: $basic-font-size + 2;
+    color: $scope-basic-color;
   }
 }
 
 #hold {
-  @include special-scope(450px, 1px, solid);
+  @include special-scope(450px, 2px, solid);
 }
 
 #assess {
-  @include special-scope(360px, 4px, double);
+  @include special-scope(360px, 6px, double);
 }
 
 #trial {
-  @include special-scope(280px, 1px, solid);
+  @include special-scope(280px, 2px, solid);
 }
 
 #adopt {
-  @include special-scope(160px, 1px, solid);
+  @include special-scope(160px, 2px, solid);
 }
 
 .vertical-line, .horizontal-line {
@@ -51,6 +55,9 @@
   left: 50%;
   width: $line-length;
   margin: 0 0 0 0-( $line-length / 2 );
+  border: none;
+  height: 2px;
+  background-color: $scope-basic-color;
 }
 
 .vertical-line {

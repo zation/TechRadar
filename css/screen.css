@@ -67,95 +67,100 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 17, ../sass/_scope.scss */
+/* line 19, ../sass/_scope.scss */
 .scope {
   position: absolute;
   left: 50%;
   top: 50%;
 }
-/* line 22, ../sass/_scope.scss */
+/* line 24, ../sass/_scope.scss */
 .scope header {
   display: inline-block;
   background-color: white;
   position: absolute;
   padding: 0 10px;
-  -webkit-transform: rotate(10deg);
-  -moz-transform: rotate(10deg);
-  -ms-transform: rotate(10deg);
-  -o-transform: rotate(10deg);
-  transform: rotate(10deg);
-}
-
-/* line 31, ../sass/_scope.scss */
-#hold {
-  width: 900px;
-  height: 900px;
-  margin-left: -451px;
-  margin-top: -451px;
-  border-radius: 451px;
-  border: 1px solid black;
-}
-/* line 11, ../sass/_scope.scss */
-#hold header {
-  left: 450px;
-  top: -5px;
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -ms-transform: rotate(6deg);
+  -o-transform: rotate(6deg);
+  transform: rotate(6deg);
+  font-size: 18px;
+  color: #bebebe;
 }
 
 /* line 35, ../sass/_scope.scss */
-#assess {
-  width: 720px;
-  height: 720px;
-  margin-left: -364px;
-  margin-top: -364px;
-  border-radius: 364px;
-  border: 4px double black;
+#hold {
+  width: 900px;
+  height: 900px;
+  margin-left: -452px;
+  margin-top: -452px;
+  border-radius: 452px;
+  border: 2px solid #bebebe;
 }
-/* line 11, ../sass/_scope.scss */
-#assess header {
-  left: 360px;
-  top: -5px;
+/* line 13, ../sass/_scope.scss */
+#hold header {
+  left: 450px;
+  top: -6px;
 }
 
 /* line 39, ../sass/_scope.scss */
-#trial {
-  width: 560px;
-  height: 560px;
-  margin-left: -281px;
-  margin-top: -281px;
-  border-radius: 281px;
-  border: 1px solid black;
+#assess {
+  width: 720px;
+  height: 720px;
+  margin-left: -366px;
+  margin-top: -366px;
+  border-radius: 366px;
+  border: 6px double #bebebe;
 }
-/* line 11, ../sass/_scope.scss */
-#trial header {
-  left: 280px;
-  top: -5px;
+/* line 13, ../sass/_scope.scss */
+#assess header {
+  left: 360px;
+  top: -10px;
 }
 
 /* line 43, ../sass/_scope.scss */
-#adopt {
-  width: 320px;
-  height: 320px;
-  margin-left: -161px;
-  margin-top: -161px;
-  border-radius: 161px;
-  border: 1px solid black;
+#trial {
+  width: 560px;
+  height: 560px;
+  margin-left: -282px;
+  margin-top: -282px;
+  border-radius: 282px;
+  border: 2px solid #bebebe;
 }
-/* line 11, ../sass/_scope.scss */
-#adopt header {
-  left: 160px;
-  top: -5px;
+/* line 13, ../sass/_scope.scss */
+#trial header {
+  left: 280px;
+  top: -6px;
 }
 
 /* line 47, ../sass/_scope.scss */
+#adopt {
+  width: 320px;
+  height: 320px;
+  margin-left: -162px;
+  margin-top: -162px;
+  border-radius: 162px;
+  border: 2px solid #bebebe;
+}
+/* line 13, ../sass/_scope.scss */
+#adopt header {
+  left: 160px;
+  top: -6px;
+}
+
+/* line 51, ../sass/_scope.scss */
 .vertical-line, .horizontal-line {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 1000px;
   margin: 0 0 0 -500px;
+  border: none;
+  height: 2px;
+  background-color: #bebebe;
 }
 
-/* line 56, ../sass/_scope.scss */
+/* line 63, ../sass/_scope.scss */
 .vertical-line {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -173,9 +178,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: rgba(255, 255, 255, 0.9);
   padding-left: 5px;
   white-space: nowrap;
+  font-size: 14px;
 }
 
-/* line 15, ../sass/_points.scss */
+/* line 16, ../sass/_points.scss */
 .unchanged:before,
 .changed:before,
 .new:before {
@@ -183,18 +189,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #11A2E1;
 }
 
-/* line 20, ../sass/_points.scss */
+/* line 21, ../sass/_points.scss */
 .unchanged:before {
   content: "\25B2";
   font-size: 12px;
 }
 
-/* line 25, ../sass/_points.scss */
+/* line 26, ../sass/_points.scss */
 .changed:before {
   content: "\2726";
 }
 
-/* line 29, ../sass/_points.scss */
+/* line 30, ../sass/_points.scss */
 .new:before {
   content: "\2738";
 }
@@ -215,22 +221,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 5px;
 }
 
-/* line 15, ../sass/_dialog.scss */
+/* line 14, ../sass/_dialog.scss */
 #description {
   width: 400px;
   padding: 5px;
   background-color: white;
-  word-wrap: break-word;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
-/* line 25, ../sass/_dialog.scss */
+/* line 20, ../sass/_dialog.scss */
 #export-db {
   display: none;
 }
 
-/* line 29, ../sass/_dialog.scss */
+/* line 24, ../sass/_dialog.scss */
 #export-db textarea {
   width: 600px;
 }
