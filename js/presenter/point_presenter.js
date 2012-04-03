@@ -23,7 +23,7 @@ Presenter.Point = (function() {
         'margin-top': coordinate.y
       };
       if (z_index) {
-        css_options['z_index'] = z_index;
+        css_options['z-index'] = z_index;
       }
       this.el.css(css_options);
       this.point.set_coordinate(coordinate);

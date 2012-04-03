@@ -40,6 +40,7 @@ function initialize_points() {
 }
 
 function setCoordinate(event) {
+  z_index++;
   center_x = content.width() / 2;
   center_y = content.height() / 2;
 
@@ -109,7 +110,6 @@ function drag_point() {
     event.preventDefault();
     current_point = points.get(event.currentTarget);
     setCoordinate(event);
-    z_index++;
   });
 
   $(document).on('mousemove', function(event) {
