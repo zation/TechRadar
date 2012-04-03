@@ -8,6 +8,7 @@ var offset_y;
 var center_x;
 var center_y;
 var current_point;
+var content = $('.content');
 
 function initialize_textarea() {
   $('#description, #export-db textarea').autoResize({
@@ -21,7 +22,7 @@ function initialize_actions() {
 }
 
 function initialize_points() {
-  $('body').append(points.el);
+  $('.content').append(points.el);
   for (var point_name in _db) {
     if (_db.hasOwnProperty(point_name)) {
       var point_db = _db[point_name];
@@ -39,10 +40,12 @@ function initialize_points() {
 }
 
 function setCoordinate(event) {
-  center_x = $(window).width() / 2;
-  center_y = $(window).height() / 2;
-  offset_x = event.offsetX;
-  offset_y = event.offsetY;
+  center_x = content.width() / 2;
+  center_y = content.height() / 2;
+
+  var current_offset = $(event.currentTarget).offset();
+  offset_x = event.clientX - current_offset.left;
+  offset_y = event.clientY - current_offset.top;
 }
 
 function getCoordinate(event) {
