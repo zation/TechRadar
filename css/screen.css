@@ -218,9 +218,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: 10px 0;
 }
 
-/* line 9, ../sass/_dialog.scss */
+/* line 10, ../sass/_dialog.scss */
+#export-db textarea,
 #description {
   width: 400px;
+  padding: 5px;
+}
+
+/* line 15, ../sass/_dialog.scss */
+#description {
   padding: 5px;
   background-color: white;
   word-wrap: break-word;
@@ -228,7 +234,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   overflow-y: auto;
 }
 
-/* line 20, ../sass/_dialog.scss */
+/* line 24, ../sass/_dialog.scss */
 #export-db {
   display: none;
 }

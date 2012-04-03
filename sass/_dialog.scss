@@ -6,12 +6,16 @@
   margin: 10px 0;
 }
 
+#export-db textarea,
 #description {
   width: 400px;
+  padding: 5px;
+}
 
+#description {
   padding: 5px;
   background-color: white;
-  
+
   word-wrap: break-word;
   overflow-x: hidden;
   overflow-y: auto;

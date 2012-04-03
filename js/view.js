@@ -61,8 +61,8 @@ function export_points() {
     event.preventDefault();
     $('#export-db').dialog({
       modal: true,
+      width: 'auto',
       open: function() {
-        console.log(points.toJSON())
         $(this).find('textarea').text(points.toJSON());
       }
     })
