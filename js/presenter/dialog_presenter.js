@@ -33,6 +33,7 @@ Presenter.Dialog.Point = (function() {
         click: function() {
           point.set_description(dialog.get_text());
           point.set_type(dialog.get_type());
+          point.set_name(dialog.get_title());
           dialog.close();
         }
       },
@@ -54,6 +55,7 @@ Presenter.Dialog.Point = (function() {
         modal: true,
         width: 'auto',
         open: function() {
+          point_dialog.set_title(point.get_name());
           point_dialog.set_text(point.get_description());
           point_dialog.point = point;
           point_dialog.el.find('#' + point.get_type()).attr('checked', 'checked');
@@ -64,12 +66,20 @@ Presenter.Dialog.Point = (function() {
       });
     },
 
+    set_title: function(title) {
+      this.el.find('#title').val(title);
+    },
+
     set_text: function(text) {
       this.el.find('#description').val(text);
     },
 
     get_text: function() {
       return this.el.find('#description').val();
+    },
+
+    get_title: function() {
+      return this.el.find('#title').val();
     },
 
     get_type: function() {
