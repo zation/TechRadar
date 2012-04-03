@@ -6,33 +6,24 @@
   left: 50%;
   cursor: pointer;
   background-color: white;
+  padding-left: 5px;
+}
+
+.unchanged:before,
+.changed:before,
+.new:before {
+  padding-right: 2px;
 }
 
 .unchanged:before {
-  content: "\25A3";
+  content: "\25B2";
+  font-size: $basic-font-size - 4;
 }
 
 .changed:before {
-  content: "\25B2";
+  content: "\2726";
 }
 
-.tips,
-.operations {
-  width: 200px;
-  border: 1px solid black;
-}
-
-.tips legend,
-.operations legend {
-  padding: 0 5px;
-}
-
-.tips {
-  margin: 10px;
-  padding: 10px;
-}
-
-.operations {
-  margin: 10px;
-  padding: 10px;
+.new:before {
+  content: "\2738";
 }

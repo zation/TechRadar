@@ -1,3 +1,10 @@
+$basic-font-size: 16px;
+
 @import "scope";
 @import "points";
 @import "dialog";
+@import "sideBar";
+
+body {
+  font-size: $basic-font-size;
+}
