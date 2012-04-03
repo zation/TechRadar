@@ -26,28 +26,28 @@ Presenter.Dialog = (function() {
 
   Dialog.prototype = {
     open: function(point) {
-      var _this = this;
-      _this.el.dialog({
+      var point_dialog = this;
+      point_dialog.el.dialog({
         title: point.get_name(),
         modal: true,
         width: 'auto',
         open: function() {
-          _this.set_text(point.get_description());
-          _this.point = point;
-          _this.el.find('#' + point.get_type()).attr('checked', 'checked');
+          point_dialog.set_text(point.get_description());
+          point_dialog.point = point;
+          point_dialog.el.find('#' + point.get_type()).attr('checked', 'checked');
           $('#type').buttonset('refresh');
-          _this.el.find('#description').focus();
+          point_dialog.el.find('#description').focus();
         },
-        buttons: get_buttons(_this, point)
+        buttons: get_buttons(point_dialog, point)
       });
     },
 
     set_text: function(text) {
-      this.el.find('#description').text(text);
+      this.el.find('#description').val(text);
     },
 
     get_text: function() {
-      return this.el.find('#description').text();
+      return this.el.find('#description').val();
     },
 
     get_type: function() {

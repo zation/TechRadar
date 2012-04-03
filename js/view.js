@@ -1,6 +1,6 @@
 var is_dragging = false;
 var points = new Collection.Points();
-var dialog = new Presenter.Dialog();
+var point_dialog = new Presenter.Dialog();
 var z_index = 0;
 var offset_x;
 var offset_y;
@@ -93,7 +93,7 @@ function view_point() {
   points.el.on('click', 'li', function(event) {
     if (!is_dragging) {
       var point = points.get(event.currentTarget);
-      dialog.open(point);
+      point_dialog.open(point);
     }
     is_dragging = false;
   });
