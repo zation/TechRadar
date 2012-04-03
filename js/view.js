@@ -8,6 +8,12 @@ var center_x;
 var center_y;
 var current_point;
 
+function initialize_textarea() {
+  $('#description, #export-db textarea').autoResize({
+    maxHeight: 600
+  });
+}
+
 function initialize_actions() {
   $('#type').buttonset();
 }

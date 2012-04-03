@@ -221,12 +221,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 10, ../sass/_dialog.scss */
 #export-db textarea,
 #description {
-  width: 400px;
   padding: 5px;
 }
 
 /* line 15, ../sass/_dialog.scss */
 #description {
+  width: 400px;
   padding: 5px;
   background-color: white;
   word-wrap: break-word;
@@ -234,7 +234,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   overflow-y: auto;
 }
 
-/* line 24, ../sass/_dialog.scss */
+/* line 25, ../sass/_dialog.scss */
 #export-db {
   display: none;
+}
+
+/* line 29, ../sass/_dialog.scss */
+#export-db textarea {
+  width: 600px;
 }

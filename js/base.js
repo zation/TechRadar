@@ -5,4 +5,5 @@ $(document).ready(function() {
   view_point();
   add_point();
   export_points();
+  initialize_textarea();
 });

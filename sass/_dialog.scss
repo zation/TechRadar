@@ -8,11 +8,12 @@
 
 #export-db textarea,
 #description {
-  width: 400px;
+
   padding: 5px;
 }
 
 #description {
+  width: 400px;
   padding: 5px;
   background-color: white;
 
@@ -23,4 +24,8 @@
 
 #export-db {
   display: none;
+}
+
+#export-db textarea {
+  width: 600px;
 }
