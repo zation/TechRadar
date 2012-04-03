@@ -1,5 +1,3 @@
-@import "compass/css3/transform";
-
 $scope-basic-color: #BEBEBE;
 
 @mixin special-scope($radius-length, $border-width, $border-type) {
@@ -28,7 +26,8 @@ $scope-basic-color: #BEBEBE;
     padding: 0 10px;
     @include rotate(6deg);
     font-size: $basic-font-size + 2;
-    color: $scope-basic-color;
+    color: #6b6b6b;
+    font-weight: bold;
   }
 }
 

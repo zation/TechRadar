@@ -67,13 +67,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 19, ../sass/_scope.scss */
+/* line 17, ../sass/_scope.scss */
 .scope {
   position: absolute;
   left: 50%;
   top: 50%;
 }
-/* line 24, ../sass/_scope.scss */
+/* line 22, ../sass/_scope.scss */
 .scope header {
   display: inline-block;
   background-color: white;
@@ -85,10 +85,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-transform: rotate(6deg);
   transform: rotate(6deg);
   font-size: 18px;
-  color: #bebebe;
+  color: #6b6b6b;
+  font-weight: bold;
 }
 
-/* line 35, ../sass/_scope.scss */
+/* line 34, ../sass/_scope.scss */
 #hold {
   width: 900px;
   height: 900px;
@@ -97,13 +98,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 452px;
   border: 2px solid #bebebe;
 }
-/* line 13, ../sass/_scope.scss */
+/* line 11, ../sass/_scope.scss */
 #hold header {
   left: 450px;
   top: -6px;
 }
 
-/* line 39, ../sass/_scope.scss */
+/* line 38, ../sass/_scope.scss */
 #assess {
   width: 720px;
   height: 720px;
@@ -112,13 +113,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 366px;
   border: 6px double #bebebe;
 }
-/* line 13, ../sass/_scope.scss */
+/* line 11, ../sass/_scope.scss */
 #assess header {
   left: 360px;
   top: -10px;
 }
 
-/* line 43, ../sass/_scope.scss */
+/* line 42, ../sass/_scope.scss */
 #trial {
   width: 560px;
   height: 560px;
@@ -127,13 +128,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 282px;
   border: 2px solid #bebebe;
 }
-/* line 13, ../sass/_scope.scss */
+/* line 11, ../sass/_scope.scss */
 #trial header {
   left: 280px;
   top: -6px;
 }
 
-/* line 47, ../sass/_scope.scss */
+/* line 46, ../sass/_scope.scss */
 #adopt {
   width: 320px;
   height: 320px;
@@ -142,13 +143,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 162px;
   border: 2px solid #bebebe;
 }
-/* line 13, ../sass/_scope.scss */
+/* line 11, ../sass/_scope.scss */
 #adopt header {
   left: 160px;
   top: -6px;
 }
 
-/* line 51, ../sass/_scope.scss */
+/* line 50, ../sass/_scope.scss */
 .vertical-line, .horizontal-line {
   position: absolute;
   top: 50%;
@@ -160,7 +161,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: #bebebe;
 }
 
-/* line 63, ../sass/_scope.scss */
+/* line 62, ../sass/_scope.scss */
 .vertical-line {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -169,7 +170,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(90deg);
 }
 
-/* line 3, ../sass/_points.scss */
+/* line 1, ../sass/_points.scss */
 #points li {
   position: absolute;
   top: 50%;
@@ -181,26 +182,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-size: 14px;
 }
 
-/* line 16, ../sass/_points.scss */
+/* line 14, ../sass/_points.scss */
 .unchanged:before,
 .changed:before,
 .new:before {
   padding-right: 2px;
   color: #11A2E1;
+  text-shadow: 1px 1px 1px gray;
 }
 
-/* line 21, ../sass/_points.scss */
+/* line 20, ../sass/_points.scss */
 .unchanged:before {
   content: "\25B2";
   font-size: 12px;
 }
 
-/* line 26, ../sass/_points.scss */
+/* line 25, ../sass/_points.scss */
 .changed:before {
   content: "\2726";
 }
 
-/* line 30, ../sass/_points.scss */
+/* line 29, ../sass/_points.scss */
 .new:before {
   content: "\2738";
 }
@@ -239,57 +241,57 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 1, ../sass/_sidebar.scss */
-.tips li {
-  margin-bottom: 5px;
+.sidebar {
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }
-
-/* line 6, ../sass/_sidebar.scss */
-.tips,
-.operations {
+/* line 10, ../sass/_sidebar.scss */
+.sidebar header {
+  background-color: #6b6b6b;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+}
+/* line 18, ../sass/_sidebar.scss */
+.sidebar section {
   width: 200px;
-  border: 1px solid black;
-}
-
-/* line 12, ../sass/_sidebar.scss */
-.tips legend,
-.operations legend {
-  padding: 0 5px;
-}
-
-/* line 16, ../sass/_sidebar.scss */
-.tips {
+  border: 1px solid #3A3A39;
   margin: 10px;
-  padding: 10px;
+}
+/* line 24, ../sass/_sidebar.scss */
+.sidebar ul {
+  padding: 5px;
+}
+/* line 28, ../sass/_sidebar.scss */
+.sidebar li {
+  margin: 5px 0;
+}
+/* line 32, ../sass/_sidebar.scss */
+.sidebar a {
+  color: black;
+}
+/* line 36, ../sass/_sidebar.scss */
+.sidebar a:hover {
+  text-decoration: none;
 }
 
-/* line 21, ../sass/_sidebar.scss */
-.operations {
-  margin: 10px;
-  padding: 10px;
-}
-
-/* line 8, ../sass/_base.scss */
+/* line 11, ../sass/_base.scss */
 body {
   font-size: 16px;
 }
 
-/* line 13, ../sass/_base.scss */
+/* line 16, ../sass/_base.scss */
 .sidebar,
 .content {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 18, ../sass/_base.scss */
+/* line 21, ../sass/_base.scss */
 .content {
   position: relative;
   width: 1050px;
   height: 1050px;
-}
-
-/* line 24, ../sass/_base.scss */
-.sidebar {
-  position: fixed;
-  top: 10px;
-  right: 10px;
 }

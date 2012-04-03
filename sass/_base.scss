@@ -1,5 +1,8 @@
 $basic-font-size: 16px;
 
+@import "compass/css3/transform";
+@import "compass/css3/user-interface";
+
 @import "scope";
 @import "points";
 @import "dialog";
@@ -21,8 +24,3 @@ body {
   height: 1050px;
 }
 
-.sidebar {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-}

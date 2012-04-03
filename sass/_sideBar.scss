@@ -1,24 +1,39 @@
-.tips li {
-  margin-bottom: 5px;
-}
+.sidebar {
+  position: fixed;
+  top: 10px;
+  right: 10px;
 
-.tips,
-.operations {
-  width: 200px;
-  border: 1px solid black;
-}
+  h2 {
 
-.tips legend,
-.operations legend {
-  padding: 0 5px;
-}
+  }
 
-.tips {
-  margin: 10px;
-  padding: 10px;
-}
+  header {
+    background-color: #6b6b6b;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+  }
 
-.operations {
-  margin: 10px;
-  padding: 10px;
+  section {
+    width: 200px;
+    border: 1px solid #3A3A39;
+    margin: 10px;
+  }
+
+  ul {
+    padding: 5px;
+  }
+  
+  li {
+    margin: 5px 0;
+  }
+  
+  a {
+    color: black;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
 }
