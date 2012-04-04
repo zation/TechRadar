@@ -10,6 +10,12 @@ $background-color: white;
 @import "dialog";
 @import "sidebar";
 
+input,
+textarea {
+  padding: 5px;
+  border: 1px solid black;
+}
+
 body {
   font-size: $basic-font-size;
   background-color: $background-color;
