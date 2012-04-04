@@ -59,8 +59,7 @@ View.Operation.Save = (function() {
   Save.prototype = {
     initialize: function() {
       this.el.on('click', function() {
-        var connection = new Connection();
-        connection.save(points.toJSON());
+        Connection.save(points.toJSON());
       });
     }
   };

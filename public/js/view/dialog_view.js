@@ -39,6 +39,7 @@ View.Dialog.Point = (function() {
           point.set_type(dialog.get_type());
           point.set_name(dialog.get_title());
           dialog.close();
+          Connection.save(points.toJSON());
         }
       },
       {
@@ -46,6 +47,7 @@ View.Dialog.Point = (function() {
         click: function() {
           points.remove(point);
           dialog.close();
+          Connection.save(points.toJSON());
         }
       }
     ];
