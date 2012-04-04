@@ -49,3 +49,21 @@ View.Operation.AddPoint = (function() {
 
   return AddPoint;
 })();
+
+View.Operation.Save = (function() {
+  function Save() {
+    this.el = $('#save');
+    this.initialize();
+  }
+
+  Save.prototype = {
+    initialize: function() {
+      this.el.on('click', function() {
+        var connection = new Connection();
+        connection.save(points.toJSON());
+      });
+    }
+  };
+
+  return Save;
+})();
