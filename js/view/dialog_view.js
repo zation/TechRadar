@@ -1,11 +1,20 @@
-Presenter.Dialog = {};
+View.Dialog = {};
 
-Presenter.Dialog.Export = (function() {
+View.Dialog.Export = (function() {
   function Export() {
     this.el = $('#export-db');
+    this.initialize();
   }
 
   Export.prototype = {
+    initialize: function() {
+      var dialog = this;
+      export_operation.el.on('click', function(event) {
+        event.preventDefault();
+        dialog.open(points.toJSON());
+      });
+    },
+
     open: function(db) {
       this.el.dialog({
         modal: true,
@@ -20,12 +29,7 @@ Presenter.Dialog.Export = (function() {
   return Export;
 })();
 
-Presenter.Dialog.Point = (function() {
-  function Point() {
-    this.el = $('#point-detail');
-    this.point = undefined;
-  }
-
+View.Dialog.Point = (function() {
   function get_buttons(dialog, point) {
     return [
       {
@@ -47,22 +51,40 @@ Presenter.Dialog.Point = (function() {
     ];
   }
 
+  function Point() {
+    this.el = $('#point-detail');
+    this.point = undefined;
+    $('#type').buttonset();
+    this.initialize();
+  }
+
   Point.prototype = {
+    initialize: function() {
+      var dialog = this;
+      points.el.on('click', 'li', function(event) {
+        if (!dragging.is_dragging) {
+          var point = points.get(event.currentTarget);
+          dialog.open(point);
+        }
+        dragging.is_dragging = false;
+      });
+    },
+
     open: function(point) {
-      var point_dialog = this;
-      point_dialog.el.dialog({
+      var dialog = this;
+      dialog.el.dialog({
         title: point.get_name(),
         modal: true,
         width: 'auto',
         open: function() {
-          point_dialog.set_title(point.get_name());
-          point_dialog.set_text(point.get_description());
-          point_dialog.point = point;
-          point_dialog.el.find('#' + point.get_type()).attr('checked', 'checked');
+          dialog.set_title(point.get_name());
+          dialog.set_text(point.get_description());
+          dialog.point = point;
+          dialog.el.find('#' + point.get_type()).attr('checked', 'checked');
           $('#type').buttonset('refresh');
-          point_dialog.el.find('#description').focus();
+          dialog.el.find('#description').focus();
         },
-        buttons: get_buttons(point_dialog, point)
+        buttons: get_buttons(dialog, point)
       });
     },
 

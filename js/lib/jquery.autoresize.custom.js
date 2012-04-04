@@ -249,7 +249,6 @@
 
       // Either animate or directly apply height:
       if (config.animate && !immediate) {
-        console.log(scrollTop)
         el.stop(1,1).animate({
           height: scrollTop
         }, config.animate);
