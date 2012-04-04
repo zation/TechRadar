@@ -1,24 +1,20 @@
 .sidebar {
   position: fixed;
-  top: 10px;
-  right: 10px;
-
-  h2 {
-
-  }
+  top: 0;
+  right: 0;
+  border-bottom: 1px solid #6b6b6b;
+  border-left: 1px solid #6b6b6b;
 
   header {
     background-color: #6b6b6b;
     color: white;
-    padding: 10px;
-    font-weight: bold;
     text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    padding: 5px;
   }
 
   section {
     width: 200px;
-    border: 1px solid #3A3A39;
-    margin: 10px;
   }
 
   ul {

@@ -4,11 +4,12 @@
   left: 50%;
   cursor: pointer;
   background-color: white;
-  box-shadow: 0 0 3px 3px white;
+  box-shadow: 0 0 3px 3px $background-color;
   line-height: 4px;
   white-space: nowrap;
   font-size: $basic-font-size - 2;
   @include user-select(none);
+  background-color: $background-color;
 }
 
 .unchanged:before,

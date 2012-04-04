@@ -1,7 +1,9 @@
 $basic-font-size: 16px;
+$background-color: white;
 
 @import "compass/css3/transform";
 @import "compass/css3/user-interface";
+@import "compass/css3/transform";
 
 @import "scope";
 @import "points";
@@ -10,6 +12,7 @@ $basic-font-size: 16px;
 
 body {
   font-size: $basic-font-size;
+  background-color: $background-color;
 }
 
 .sidebar,

@@ -189,9 +189,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  background-color: white;
 }
 
-/* line 16, ../sass/_points.scss */
+/* line 17, ../sass/_points.scss */
 .unchanged:before,
 .changed:before,
 .new:before {
@@ -200,18 +201,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: 1px 1px 1px gray;
 }
 
-/* line 22, ../sass/_points.scss */
+/* line 23, ../sass/_points.scss */
 .unchanged:before {
   content: "\25B2";
   font-size: 12px;
 }
 
-/* line 27, ../sass/_points.scss */
+/* line 28, ../sass/_points.scss */
 .changed:before {
   content: "\2726";
 }
 
-/* line 31, ../sass/_points.scss */
+/* line 32, ../sass/_points.scss */
 .new:before {
   content: "\2738";
 }
@@ -252,53 +253,54 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 1, ../sass/_sidebar.scss */
 .sidebar {
   position: fixed;
-  top: 10px;
-  right: 10px;
+  top: 0;
+  right: 0;
+  border-bottom: 1px solid #6b6b6b;
+  border-left: 1px solid #6b6b6b;
 }
-/* line 10, ../sass/_sidebar.scss */
+/* line 8, ../sass/_sidebar.scss */
 .sidebar header {
   background-color: #6b6b6b;
   color: white;
-  padding: 10px;
-  font-weight: bold;
   text-shadow: 1px 1px 2px black;
+  font-weight: bold;
+  padding: 5px;
 }
-/* line 18, ../sass/_sidebar.scss */
+/* line 16, ../sass/_sidebar.scss */
 .sidebar section {
   width: 200px;
-  border: 1px solid #3A3A39;
-  margin: 10px;
 }
-/* line 24, ../sass/_sidebar.scss */
+/* line 20, ../sass/_sidebar.scss */
 .sidebar ul {
   padding: 5px;
 }
-/* line 28, ../sass/_sidebar.scss */
+/* line 24, ../sass/_sidebar.scss */
 .sidebar li {
   margin: 5px 0;
 }
-/* line 32, ../sass/_sidebar.scss */
+/* line 28, ../sass/_sidebar.scss */
 .sidebar a {
   color: black;
 }
-/* line 36, ../sass/_sidebar.scss */
+/* line 32, ../sass/_sidebar.scss */
 .sidebar a:hover {
   text-decoration: none;
 }
 
-/* line 11, ../sass/_base.scss */
+/* line 13, ../sass/_base.scss */
 body {
   font-size: 16px;
+  background-color: white;
 }
 
-/* line 16, ../sass/_base.scss */
+/* line 19, ../sass/_base.scss */
 .sidebar,
 .content {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 21, ../sass/_base.scss */
+/* line 24, ../sass/_base.scss */
 .content {
   position: relative;
   width: 1050px;

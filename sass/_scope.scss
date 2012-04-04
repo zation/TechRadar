@@ -23,8 +23,8 @@ $scope-basic-color: #BEBEBE;
 
   header {
     display: inline-block;
-    background-color: white;
-    box-shadow: 0 0 2px 2px white;
+    background-color: $background-color;
+    box-shadow: 0 0 2px 2px $background-color;
     margin-left: 10px;
     position: absolute;
     @include rotate(6deg);
