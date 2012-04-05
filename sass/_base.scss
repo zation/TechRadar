@@ -1,11 +1,13 @@
 $basic-font-size: 16px;
 $background-color: white;
+$content-basic-color: #BEBEBE;
 
 @import "compass/css3/transform";
 @import "compass/css3/user-interface";
 @import "compass/css3/transform";
 
 @import "scope";
+@import "quadrant";
 @import "points";
 @import "dialog";
 @import "sidebar";

@@ -1,12 +1,10 @@
-$scope-basic-color: #BEBEBE;
-
 @mixin special-scope($radius-length, $border-width, $border-type) {
   width: $radius-length * 2;
   height: $radius-length * 2;
   margin-left: 0 - $radius-length - $border-width;
   margin-top: 0 - $radius-length - $border-width;
   border-radius: $radius-length + $border-width;
-  border: $border-width $border-type $scope-basic-color;
+  border: $border-width $border-type $content-basic-color;
 
   header {
     left: $radius-length;
@@ -48,20 +46,4 @@ $scope-basic-color: #BEBEBE;
 
 #adopt {
   @include special-scope(160px, 2px, solid);
-}
-
-.vertical-line, .horizontal-line {
-  $line-length: 1000px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: $line-length;
-  margin: 0 0 0 0-( $line-length / 2 );
-  border: none;
-  height: 2px;
-  background-color: $scope-basic-color;
-}
-
-.vertical-line {
-  @include rotate(90deg);
 }

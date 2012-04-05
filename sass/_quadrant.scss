@@ -1,0 +1,46 @@
+.vertical-line, .horizontal-line {
+  $line-length: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: $line-length;
+  margin: 0 0 0 0-( $line-length / 2 );
+  border: none;
+  height: 2px;
+  background-color: $content-basic-color;
+}
+
+.vertical-line {
+  @include rotate(90deg);
+}
+
+.quadrant {
+  @include user-select(none);
+  cursor: default;
+  position: absolute;
+
+  header {
+    color: $content-basic-color;
+    font-size: $basic-font-size + 30;
+  }
+}
+
+#techniques {
+  top: 20%;
+  left: 5%;
+}
+
+#tools {
+  top: 20%;
+  left: 80%;
+}
+
+#platforms {
+  top: 80%;
+  left: 5%;
+}
+
+#languages {
+  top: 80%;
+  left: 80%;
+}

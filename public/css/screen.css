@@ -67,7 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 17, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
+/* line 15, ../../sass/_scope.scss */
 .scope {
   position: absolute;
   left: 50%;
@@ -77,7 +77,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   user-select: none;
   cursor: default;
 }
-/* line 24, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
+/* line 22, ../../sass/_scope.scss */
 .scope header {
   display: inline-block;
   background-color: white;
@@ -94,7 +94,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: bold;
 }
 
-/* line 37, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
+/* line 35, ../../sass/_scope.scss */
 #hold {
   width: 900px;
   height: 900px;
@@ -103,13 +103,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 452px;
   border: 2px solid #bebebe;
 }
-/* line 11, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
+/* line 9, ../../sass/_scope.scss */
 #hold header {
   left: 450px;
   top: -6px;
 }
 
-/* line 41, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
+/* line 39, ../../sass/_scope.scss */
 #assess {
   width: 720px;
   height: 720px;
@@ -118,13 +118,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 366px;
   border: 6px double #bebebe;
 }
-/* line 11, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
+/* line 9, ../../sass/_scope.scss */
 #assess header {
   left: 360px;
   top: -10px;
 }
 
-/* line 45, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
+/* line 43, ../../sass/_scope.scss */
 #trial {
   width: 560px;
   height: 560px;
@@ -133,13 +133,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 282px;
   border: 2px solid #bebebe;
 }
-/* line 11, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
+/* line 9, ../../sass/_scope.scss */
 #trial header {
   left: 280px;
   top: -6px;
 }
 
-/* line 49, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
+/* line 47, ../../sass/_scope.scss */
 #adopt {
   width: 320px;
   height: 320px;
@@ -148,13 +148,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 162px;
   border: 2px solid #bebebe;
 }
-/* line 11, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
+/* line 9, ../../sass/_scope.scss */
 #adopt header {
   left: 160px;
   top: -6px;
 }
 
-/* line 53, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
+/* line 1, ../../sass/_quadrant.scss */
 .vertical-line, .horizontal-line {
   position: absolute;
   top: 50%;
@@ -166,7 +166,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: #bebebe;
 }
 
-/* line 65, /Users/twer/Documents/Projects/github/TechRadar/sass/_scope.scss */
+/* line 13, ../../sass/_quadrant.scss */
 .vertical-line {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -175,7 +175,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(90deg);
 }
 
-/* line 1, /Users/twer/Documents/Projects/github/TechRadar/sass/_points.scss */
+/* line 17, ../../sass/_quadrant.scss */
+.quadrant {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: default;
+  position: absolute;
+}
+/* line 22, ../../sass/_quadrant.scss */
+.quadrant header {
+  color: #bebebe;
+  font-size: 46px;
+}
+
+/* line 28, ../../sass/_quadrant.scss */
+#techniques {
+  top: 20%;
+  left: 5%;
+}
+
+/* line 33, ../../sass/_quadrant.scss */
+#tools {
+  top: 20%;
+  left: 80%;
+}
+
+/* line 38, ../../sass/_quadrant.scss */
+#platforms {
+  top: 80%;
+  left: 5%;
+}
+
+/* line 43, ../../sass/_quadrant.scss */
+#languages {
+  top: 80%;
+  left: 80%;
+}
+
+/* line 1, ../../sass/_points.scss */
 #points li {
   position: absolute;
   top: 50%;
@@ -192,7 +230,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: white;
 }
 
-/* line 17, /Users/twer/Documents/Projects/github/TechRadar/sass/_points.scss */
+/* line 17, ../../sass/_points.scss */
 .unchanged:before,
 .changed:before,
 .new:before {
@@ -201,56 +239,56 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: 1px 1px 1px gray;
 }
 
-/* line 23, /Users/twer/Documents/Projects/github/TechRadar/sass/_points.scss */
+/* line 23, ../../sass/_points.scss */
 .unchanged:before {
   content: "\25B2";
   font-size: 12px;
 }
 
-/* line 28, /Users/twer/Documents/Projects/github/TechRadar/sass/_points.scss */
+/* line 28, ../../sass/_points.scss */
 .changed:before {
   content: "\2726";
 }
 
-/* line 32, /Users/twer/Documents/Projects/github/TechRadar/sass/_points.scss */
+/* line 32, ../../sass/_points.scss */
 .new:before {
   content: "\2738";
 }
 
-/* line 1, /Users/twer/Documents/Projects/github/TechRadar/sass/_dialog.scss */
+/* line 1, ../../sass/_dialog.scss */
 #point-detail {
   display: none;
 }
 
-/* line 5, /Users/twer/Documents/Projects/github/TechRadar/sass/_dialog.scss */
+/* line 5, ../../sass/_dialog.scss */
 #point-detail div {
   margin: 10px 0;
 }
 
-/* line 10, /Users/twer/Documents/Projects/github/TechRadar/sass/_dialog.scss */
+/* line 10, ../../sass/_dialog.scss */
 #export-db textarea,
 #description {
   padding: 5px;
 }
 
-/* line 14, /Users/twer/Documents/Projects/github/TechRadar/sass/_dialog.scss */
+/* line 14, ../../sass/_dialog.scss */
 #description {
   width: 400px;
   padding: 5px;
   background-color: white;
 }
 
-/* line 20, /Users/twer/Documents/Projects/github/TechRadar/sass/_dialog.scss */
+/* line 20, ../../sass/_dialog.scss */
 #export-db {
   display: none;
 }
 
-/* line 24, /Users/twer/Documents/Projects/github/TechRadar/sass/_dialog.scss */
+/* line 24, ../../sass/_dialog.scss */
 #export-db textarea {
   width: 600px;
 }
 
-/* line 1, /Users/twer/Documents/Projects/github/TechRadar/sass/_sidebar.scss */
+/* line 1, ../../sass/_sidebar.scss */
 .sidebar {
   position: fixed;
   top: 0;
@@ -258,7 +296,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-bottom: 1px solid #6b6b6b;
   border-left: 1px solid #6b6b6b;
 }
-/* line 8, /Users/twer/Documents/Projects/github/TechRadar/sass/_sidebar.scss */
+/* line 8, ../../sass/_sidebar.scss */
 .sidebar header {
   background-color: #6b6b6b;
   color: white;
@@ -266,48 +304,48 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: bold;
   padding: 5px;
 }
-/* line 16, /Users/twer/Documents/Projects/github/TechRadar/sass/_sidebar.scss */
+/* line 16, ../../sass/_sidebar.scss */
 .sidebar section {
   width: 200px;
 }
-/* line 20, /Users/twer/Documents/Projects/github/TechRadar/sass/_sidebar.scss */
+/* line 20, ../../sass/_sidebar.scss */
 .sidebar ul {
   padding: 5px;
 }
-/* line 24, /Users/twer/Documents/Projects/github/TechRadar/sass/_sidebar.scss */
+/* line 24, ../../sass/_sidebar.scss */
 .sidebar li {
   margin: 5px 0;
 }
-/* line 28, /Users/twer/Documents/Projects/github/TechRadar/sass/_sidebar.scss */
+/* line 28, ../../sass/_sidebar.scss */
 .sidebar a {
   color: black;
 }
-/* line 32, /Users/twer/Documents/Projects/github/TechRadar/sass/_sidebar.scss */
+/* line 32, ../../sass/_sidebar.scss */
 .sidebar a:hover {
   text-decoration: none;
 }
 
-/* line 14, ../../sass/_base.scss */
+/* line 16, ../../sass/_base.scss */
 input,
 textarea {
   padding: 5px;
   border: 1px solid black;
 }
 
-/* line 19, ../../sass/_base.scss */
+/* line 21, ../../sass/_base.scss */
 body {
   font-size: 16px;
   background-color: white;
 }
 
-/* line 25, ../../sass/_base.scss */
+/* line 27, ../../sass/_base.scss */
 .sidebar,
 .content {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 30, ../../sass/_base.scss */
+/* line 32, ../../sass/_base.scss */
 .content {
   position: relative;
   width: 1050px;
