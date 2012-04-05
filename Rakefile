@@ -1,4 +1,14 @@
 
+namespace :server do
+  task :start do
+    system('ruby', 'controller.rb')
+  end
+
+  task :test do
+    system('shotgun', 'controller.rb')
+  end
+end
+
 begin
   require 'jasmine'
   load 'jasmine/tasks/jasmine.rake'
