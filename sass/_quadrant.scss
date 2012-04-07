@@ -1,3 +1,6 @@
+$quadrant-header-height: 50px;
+$quadrant-header-width: 230px;
+
 .vertical-line, .horizontal-line {
   $line-length: 1000px;
   position: absolute;
@@ -18,29 +21,37 @@
   @include user-select(none);
   cursor: default;
   position: absolute;
+  top: 50%;
+  left: 50%;
 
   header {
     color: $content-basic-color;
     font-size: $basic-font-size + 30;
+    width: $quadrant-header-width;
+    line-height: $quadrant-header-height;
   }
 }
 
 #techniques {
-  top: 20%;
-  left: 5%;
+  margin-left: 0 - $hold-radius-length * 0.7 - $quadrant-header-width;
+  margin-top: 0 - $hold-radius-length * 0.7 - $quadrant-header-height;
+  text-align: right;
 }
 
 #tools {
-  top: 20%;
-  left: 80%;
+  margin-left: $hold-radius-length * 0.7;
+  margin-top: 0 - $hold-radius-length * 0.7 - $quadrant-header-height;
+  text-align: left;
 }
 
 #platforms {
-  top: 80%;
-  left: 5%;
+  margin-left: 0 - $hold-radius-length * 0.7 - $quadrant-header-width;
+  margin-top: $hold-radius-length * 0.7;
+  text-align: right;
 }
 
 #languages {
-  top: 80%;
-  left: 80%;
+  margin-left: $hold-radius-length * 0.7;
+  margin-top: $hold-radius-length * 0.7;
+  text-align: left;
 }

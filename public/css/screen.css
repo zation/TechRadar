@@ -154,7 +154,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: -6px;
 }
 
-/* line 1, ../../sass/_quadrant.scss */
+/* line 4, ../../sass/_quadrant.scss */
 .vertical-line, .horizontal-line {
   position: absolute;
   top: 50%;
@@ -166,7 +166,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: #bebebe;
 }
 
-/* line 13, ../../sass/_quadrant.scss */
+/* line 16, ../../sass/_quadrant.scss */
 .vertical-line {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -175,42 +175,50 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(90deg);
 }
 
-/* line 17, ../../sass/_quadrant.scss */
+/* line 20, ../../sass/_quadrant.scss */
 .quadrant {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
   cursor: default;
   position: absolute;
+  top: 50%;
+  left: 50%;
 }
-/* line 22, ../../sass/_quadrant.scss */
+/* line 27, ../../sass/_quadrant.scss */
 .quadrant header {
   color: #bebebe;
   font-size: 46px;
+  width: 230px;
+  line-height: 50px;
 }
 
-/* line 28, ../../sass/_quadrant.scss */
+/* line 35, ../../sass/_quadrant.scss */
 #techniques {
-  top: 20%;
-  left: 5%;
+  margin-left: -545px;
+  margin-top: -365px;
+  text-align: right;
 }
 
-/* line 33, ../../sass/_quadrant.scss */
+/* line 41, ../../sass/_quadrant.scss */
 #tools {
-  top: 20%;
-  left: 80%;
+  margin-left: 315px;
+  margin-top: -365px;
+  text-align: left;
 }
 
-/* line 38, ../../sass/_quadrant.scss */
+/* line 47, ../../sass/_quadrant.scss */
 #platforms {
-  top: 80%;
-  left: 5%;
+  margin-left: -545px;
+  margin-top: 315px;
+  text-align: right;
 }
 
-/* line 43, ../../sass/_quadrant.scss */
+/* line 53, ../../sass/_quadrant.scss */
 #languages {
-  top: 80%;
-  left: 80%;
+  margin-left: 315px;
+  margin-top: 315px;
+  text-align: left;
 }
 
 /* line 1, ../../sass/_points.scss */
@@ -323,34 +331,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-decoration: none;
 }
 
-/* line 17, ../../sass/_base.scss */
+/* line 18, ../../sass/_base.scss */
 input,
 textarea {
   padding: 5px;
   border: 1px solid black;
 }
 
-/* line 22, ../../sass/_base.scss */
+/* line 23, ../../sass/_base.scss */
 body {
   font-size: 16px;
   background-color: white;
 }
 
-/* line 28, ../../sass/_base.scss */
+/* line 29, ../../sass/_base.scss */
 .sidebar,
 .content {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 33, ../../sass/_base.scss */
+/* line 34, ../../sass/_base.scss */
 .content {
   position: relative;
   width: 1050px;
   height: 1050px;
 }
 
-/* line 39, ../../sass/_base.scss */
+/* line 40, ../../sass/_base.scss */
 #sidebar-switcher {
   position: absolute;
   height: 30px;

@@ -33,7 +33,7 @@
 }
 
 #hold {
-  @include special-scope(450px, 2px, solid);
+  @include special-scope($hold-radius-length, 2px, solid);
 }
 
 #assess {
