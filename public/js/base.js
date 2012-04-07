@@ -6,6 +6,7 @@ var points = new Collection.Points();
 var export_operation = new View.Operation.Export();
 var add_operation = new View.Operation.AddPoint();
 var save_operation = new View.Operation.Save();
+var sidebar_switcher = new View.Operation.SidebarSwitcher();
 
 var point_dialog = new View.Dialog.Point();
 var export_dialog = new View.Dialog.Export();

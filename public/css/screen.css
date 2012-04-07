@@ -295,8 +295,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   right: 0;
   border-bottom: 1px solid #6b6b6b;
   border-left: 1px solid #6b6b6b;
+  background-color: white;
+  width: 200px;
 }
-/* line 8, ../../sass/_sidebar.scss */
+/* line 10, ../../sass/_sidebar.scss */
 .sidebar header {
   background-color: #6b6b6b;
   color: white;
@@ -304,50 +306,62 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: bold;
   padding: 5px;
 }
-/* line 16, ../../sass/_sidebar.scss */
-.sidebar section {
-  width: 200px;
-}
-/* line 20, ../../sass/_sidebar.scss */
+/* line 18, ../../sass/_sidebar.scss */
 .sidebar ul {
   padding: 5px;
 }
-/* line 24, ../../sass/_sidebar.scss */
+/* line 22, ../../sass/_sidebar.scss */
 .sidebar li {
   margin: 5px 0;
 }
-/* line 28, ../../sass/_sidebar.scss */
+/* line 26, ../../sass/_sidebar.scss */
 .sidebar a {
   color: black;
 }
-/* line 32, ../../sass/_sidebar.scss */
+/* line 30, ../../sass/_sidebar.scss */
 .sidebar a:hover {
   text-decoration: none;
 }
 
-/* line 16, ../../sass/_base.scss */
+/* line 17, ../../sass/_base.scss */
 input,
 textarea {
   padding: 5px;
   border: 1px solid black;
 }
 
-/* line 21, ../../sass/_base.scss */
+/* line 22, ../../sass/_base.scss */
 body {
   font-size: 16px;
   background-color: white;
 }
 
-/* line 27, ../../sass/_base.scss */
+/* line 28, ../../sass/_base.scss */
 .sidebar,
 .content {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 32, ../../sass/_base.scss */
+/* line 33, ../../sass/_base.scss */
 .content {
   position: relative;
   width: 1050px;
   height: 1050px;
+}
+
+/* line 39, ../../sass/_base.scss */
+#sidebar-switcher {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 10px;
+  left: -32px;
+  background-color: #BEBEBE;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #6B6B6B;
+  border-right: none;
+  cursor: pointer;
 }

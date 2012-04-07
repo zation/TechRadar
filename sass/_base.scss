@@ -5,6 +5,7 @@ $content-basic-color: #BEBEBE;
 @import "compass/css3/transform";
 @import "compass/css3/user-interface";
 @import "compass/css3/transform";
+@import "compass/css3/images";
 
 @import "scope";
 @import "quadrant";
@@ -33,5 +34,20 @@ body {
   position: relative;
   width: 1050px;
   height: 1050px;
+}
+
+#sidebar-switcher {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 10px;
+  left: -32px;
+  background-color: #BEBEBE;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #6B6B6B;
+  border-right: none;
+  cursor: pointer;
 }
 

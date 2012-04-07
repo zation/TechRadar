@@ -54,8 +54,10 @@ View.Dragging = (function() {
       });
 
       $(document).on('mouseup', function() {
-        _current_point = undefined;
-        Connection.save(points.toJSON());
+        if (_current_point) {
+          _current_point = undefined;
+          Connection.save(points.toJSON());
+        }
       });
     },
 
