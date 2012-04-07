@@ -1,8 +1,14 @@
 # Technology Radar with HTML
 
-## How to use
-1. git clone `git@github.com:zation/TechRadar.git`
-2. bundle install
-3. rake server:start
-4. open [local server](http://localhost:4567/)
-5. enjoy!
+## Getting Started
+1. `git clone git@github.com:zation/TechRadar.git`
+2. `bundle install`
+3. `rake server:start`
+4. Open [local server](http://localhost:4567/)
+5. Enjoy!
+
+## Host your Technology Radar on github
+1. Folk this repo
+2. Modify the Technology Radar on your local side
+3. Push public\js\db.js to remote branch gh-pages
+4. View your Technology Radar on your github project page
