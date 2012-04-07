@@ -81,7 +81,6 @@ View.Operation.SidebarSwitcher = (function() {
           right: sidebar.el.css('right') == '0px' ? -sidebar.el.width() : 0
         }, 1000, function() {
           sidebar.el.css('right') == '0px' ? sidebar_switcher.text('>>') : sidebar_switcher.text('<<');
-          content.resize_width();
         });
       });
     }
