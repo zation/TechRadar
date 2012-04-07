@@ -16,7 +16,7 @@ View.Layout.Content = (function() {
     },
 
     resize_width: function() {
-      var calculate_width = $(window).width() - sidebar.el.width();
+      var calculate_width = $(window).width() - sidebar.el.width() - Number(sidebar.el.css('right').replace('px', ''));
       if (calculate_width > this.el.height())
         this.el.width(calculate_width);
     }
