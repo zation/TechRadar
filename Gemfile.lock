@@ -1,5 +1,5 @@
 GEM
-  remote: http://ruby.taobao.org/
+  remote: http://rubygems.org/
   specs:
     childprocess (0.3.1)
       ffi (~> 1.0.6)
@@ -18,6 +18,7 @@ GEM
       selenium-webdriver (>= 0.1.3)
     jasmine-core (1.1.0)
     multi_json (1.1.0)
+    pg (0.13.2)
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
@@ -50,5 +51,6 @@ PLATFORMS
 DEPENDENCIES
   compass
   jasmine
+  pg
   shotgun
   sinatra
