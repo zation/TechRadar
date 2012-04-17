@@ -5,8 +5,7 @@ View.Dragging = (function() {
 
     if (calculated_x > right_boundary) {
       calculated_x = right_boundary;
-    }
-    else if (calculated_x < left_boundary) {
+    } else if (calculated_x < left_boundary) {
       calculated_x = left_boundary
     }
     return calculated_x;
@@ -18,8 +17,7 @@ View.Dragging = (function() {
 
     if (calculated_y > bottom_boundary) {
       calculated_y = bottom_boundary;
-    }
-    else if (calculated_y < top_boundary) {
+    } else if (calculated_y < top_boundary) {
       calculated_y = top_boundary;
     }
     return calculated_y;
@@ -39,6 +37,9 @@ View.Dragging = (function() {
 
   Dragging.prototype = {
     initialize: function() {
+      _center_x = content.el.width() / 2;
+      _center_y = content.el.height() / 2;
+
       var dragging = this;
       points.el.on('mousedown', 'li', function(event) {
         event.preventDefault();
@@ -67,12 +68,20 @@ View.Dragging = (function() {
 
     set_coordinate: function(event) {
       _z_index++;
-      _center_x = content.el.width() / 2;
-      _center_y = content.el.height() / 2;
 
       var current_offset = $(event.currentTarget).offset();
       _offset_x = event.clientX - current_offset.left;
       _offset_y = event.clientY - current_offset.top;
+    },
+
+    get_coordinate_when_dblclick: function() {
+      var calculated_x = event.clientX - _center_x + $(window).scrollLeft();
+      var calculated_y = event.clientY - _center_y + $(window).scrollTop();
+
+      return {
+        x: calculated_x,
+        y: calculated_y
+      }
     },
 
     get_coordinate: function(event) {
@@ -82,7 +91,7 @@ View.Dragging = (function() {
       return {
         x: validated_calculated_x(calculated_x),
         y: validated_calculated_y(calculated_y)
-      }
+      };
     }
   };
 

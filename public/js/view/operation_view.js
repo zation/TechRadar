@@ -12,20 +12,6 @@ View.Operation.Export = (function() {
 })();
 
 View.Operation.AddPoint = (function() {
-  function get_new_point_name(name) {
-    function generate_name() {
-      return name + '(' + duplicated_number + ')';
-    }
-
-    if (!points.is_contain(name)) return name;
-    var duplicated_number = 1;
-
-    while (points.is_contain(generate_name(name))) {
-      duplicated_number++;
-    }
-    return generate_name(name);
-  }
-
   function AddPoint() {
     this.el = $('#add-point');
     this.initialize();
@@ -37,7 +23,7 @@ View.Operation.AddPoint = (function() {
         event.preventDefault();
 
         var point = new Presenter.Point();
-        point.set_name(get_new_point_name(point.get_name()));
+        point.set_name(points.get_new_point_name(point.get_name()));
 
         points.add(point);
 

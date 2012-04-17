@@ -13,6 +13,15 @@ View.Layout.Content = (function() {
       $(window).on('resize', function() {
         content.resize_width();
       });
+      content.el.dblclick(function(event) {
+        var point = new Presenter.Point();
+        point.set_name(points.get_new_point_name(point.get_name()));
+
+        points.add(point);
+
+        point.set_coordinate(dragging.get_coordinate_when_dblclick(event));
+        Connection.save(points.toJSON());
+      });
     },
 
     resize_width: function() {

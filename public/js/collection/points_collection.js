@@ -26,6 +26,20 @@ Collection.Points = (function() {
       }
     },
 
+    get_new_point_name: function(name) {
+      function generate_name() {
+        return name + '(' + duplicated_number + ')';
+      }
+
+      if (!this.is_contain(name)) return name;
+      var duplicated_number = 1;
+
+      while (this.is_contain(generate_name(name))) {
+        duplicated_number++;
+      }
+      return generate_name(name);
+    },
+
     add: function(point_presenter) {
       this.list.push(point_presenter);
       this.el.append(point_presenter.el);
