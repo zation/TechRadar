@@ -1,3 +1,5 @@
+var team_name = location.pathname.replace('/', '');
+
 var sidebar = new View.Layout.Sidebar();
 var content = new View.Layout.Content();
 
