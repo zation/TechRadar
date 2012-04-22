@@ -3,6 +3,10 @@ require 'redis'
 
 redis = Redis.new
 
+get '/' do
+	File.read('login.html')
+end
+
 get '/:team_name' do
   File.read('index.html')
 end
