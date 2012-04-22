@@ -22,6 +22,14 @@ Model.Point = (function() {
 
     set_coordinate: function(coordinate) {
       this.coordinate = coordinate;
+    },
+
+    set_description: function(description) {
+      this.description = description;
+    },
+
+    set_type: function(type) {
+      this.point.type = type;
     }
   };
 

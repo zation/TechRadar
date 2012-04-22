@@ -22,7 +22,7 @@ View.Dialog.Export = (function() {
         open: function() {
           $(this).find('textarea').val(db);
         }
-      })
+      });
     }
   };
 

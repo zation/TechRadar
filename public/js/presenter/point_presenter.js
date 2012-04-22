@@ -30,13 +30,13 @@ Presenter.Point = (function() {
     },
 
     set_description: function(descritpion) {
-      this.point.description = descritpion;
+      this.point.set_description(descritpion);
     },
 
     set_type: function(type) {
       this.el.removeClass();
       this.el.addClass(type);
-      this.point.type = type;
+      this.point.set_type(type);
     },
 
     set_name: function(name) {
@@ -45,7 +45,7 @@ Presenter.Point = (function() {
     },
 
     save: function(options) {
-      for (key in options) {
+      for (var key in options) {
         if (options.hasOwnProperty(key))
           this.point[key] = options[key];
       }

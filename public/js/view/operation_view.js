@@ -36,23 +36,6 @@ View.Operation.AddPoint = (function() {
   return AddPoint;
 })();
 
-View.Operation.Save = (function() {
-  function Save() {
-    this.el = $('#save');
-    this.initialize();
-  }
-
-  Save.prototype = {
-    initialize: function() {
-      this.el.on('click', function() {
-        Connection.save(points.toJSON());
-      });
-    }
-  };
-
-  return Save;
-})();
-
 View.Operation.SidebarSwitcher = (function() {
   function SidebarSwitcher() {
     this.el = $('#sidebar-switcher');
@@ -66,7 +49,13 @@ View.Operation.SidebarSwitcher = (function() {
         sidebar.el.animate({
           right: sidebar.el.css('right') == '0px' ? -sidebar.el.width() : 0
         }, 1000, function() {
-          sidebar.el.css('right') == '0px' ? sidebar_switcher.text('>>') : sidebar_switcher.text('<<');
+          var is_sidebar_hidden = sidebar.el.css('right') === '0px';
+          if(is_sidebar_hidden){
+            sidebar_switcher.text('>>');
+          }
+          else {
+            sidebar_switcher.text('<<');
+          }
         });
       });
     }
