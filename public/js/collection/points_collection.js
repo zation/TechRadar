@@ -7,9 +7,9 @@ Collection.Points = (function() {
     this.initialize();
   }
 
-  Points.prototype = {
-    initialize: function() {
-      content.el.append(this.el);
+  function initialize_from_db(data) {
+    if (data !== "") {
+      var _db = JSON.parse(data);
       for (var point_name in _db) {
         if (_db.hasOwnProperty(point_name)) {
           var point_db = _db[point_name];
@@ -21,9 +21,17 @@ Collection.Points = (function() {
             quadrant: point_db.quadrant,
             description: point_db.description
           });
-          this.add(point);
+          points.add(point);
         }
       }
+    }
+  }
+
+  Points.prototype = {
+    initialize: function() {
+      var points = this;
+      content.el.append(points.el);
+      Connection.get(initialize_from_db);
     },
 
     get_new_point_name: function(name) {
@@ -66,7 +74,7 @@ Collection.Points = (function() {
         point = this.list[i].point;
         result_JSON[point.name] = point;
       }
-      return 'var _db = ' + JSON.stringify(result_JSON) + ';';
+      return JSON.stringify(result_JSON);
     },
 
     remove: function(point) {

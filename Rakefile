@@ -9,6 +9,10 @@ namespace :server do
   end
 end
 
+task :db do
+  sh('redis-server')
+end
+
 begin
   require 'jasmine'
   load 'jasmine/tasks/jasmine.rake'

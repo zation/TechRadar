@@ -1,4 +1,7 @@
 require 'sinatra'
+require 'redis'
+
+redis = Redis.new
 
 get '/' do
   File.read('index.html')
@@ -13,8 +16,10 @@ get '/public/*' do |path|
 end
 
 post '/points' do
-  File.open('public/js/db.js', 'w') do |file|
-    file.puts params['data']
-  end
+  redis.set 'db', params['data']
   return 'success'
+end
+
+get '/points' do
+	return redis.get 'db'
 end
