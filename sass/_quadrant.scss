@@ -1,8 +1,20 @@
 $quadrant-header-height: 50px;
 $quadrant-header-width: 230px;
+$login-line-length: 600px;
+$line-length: 1000px;
+
+.login .vertical-line, .login .horizontal-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: $login-line-length;
+  margin: 0 0 0 0-( $login-line-length / 2 );
+  border: none;
+  height: 2px;
+  background-color: $content-basic-color;
+}
 
 .vertical-line, .horizontal-line {
-  $line-length: 1000px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -53,5 +65,29 @@ $quadrant-header-width: 230px;
 #languages {
   margin-left: $hold-radius-length * 0.7;
   margin-top: $hold-radius-length * 0.7;
+  text-align: left;
+}
+
+#technology {
+  margin-left: 0 - $main-radius-length * 0.7 - $quadrant-header-width;
+  margin-top: 0 - $main-radius-length * 0.7 - $quadrant-header-height;
+  text-align: right;
+}
+
+#knowledge {
+  margin-left: $main-radius-length * 0.7;
+  margin-top: 0 - $main-radius-length * 0.7 - $quadrant-header-height;
+  text-align: left;
+}
+
+#goal {
+  margin-left: 0 - $main-radius-length * 0.7 - $quadrant-header-width;
+  margin-top: $main-radius-length * 0.7;
+  text-align: right;
+}
+
+#culture {
+  margin-left: $main-radius-length * 0.7;
+  margin-top: $main-radius-length * 0.7;
   text-align: left;
 }

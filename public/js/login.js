@@ -1,0 +1,1 @@
+$('.content').width($(window).width());

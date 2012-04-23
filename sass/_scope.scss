@@ -32,6 +32,10 @@
   }
 }
 
+#main {
+  @include special-scope($main-radius-length, 2px, solid);
+}
+
 #hold {
   @include special-scope($hold-radius-length, 2px, solid);
 }

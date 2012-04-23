@@ -67,6 +67,70 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* line 4, ../../sass/_login.scss */
+.login .content {
+  height: 750px;
+}
+/* line 8, ../../sass/_login.scss */
+.login form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  width: 280px;
+  text-align: center;
+}
+/* line 16, ../../sass/_login.scss */
+.login form input {
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 22, ../../sass/_login.scss */
+.login form input[type="submit"] {
+  border: 1px solid #951100;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
+  color: white;
+  padding: 12px 0 14px 0;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8);
+  width: 150px;
+  cursor: pointer;
+  font-size: 16px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ee432e), color-stop(50%, #c63929), color-stop(50%, #b51700), color-stop(100%, #891100));
+  background: -webkit-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);
+  background: -moz-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);
+  background: -o-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);
+  background: -ms-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);
+  background: linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);
+}
+/* line 37, ../../sass/_login.scss */
+.login form input[type="submit"]:hover {
+  background-color: #f37873;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f37873), color-stop(50%, #db504d), color-stop(50%, #cb0500), color-stop(100%, #a20601));
+  background: -webkit-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);
+  background: -moz-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);
+  background: -o-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);
+  background: -ms-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);
+  background: linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);
+}
+/* line 44, ../../sass/_login.scss */
+.login form input[type="submit"]:active {
+  background-color: #d43c28;
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d43c28), color-stop(50%, #ad3224), color-stop(50%, #9c1500), color-stop(100%, #700d00));
+  background: -webkit-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%);
+  background: -moz-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%);
+  background: -o-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%);
+  background: -ms-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%);
+  background: linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%);
+}
+
+/* line 54, ../../sass/_login.scss */
+#login {
+  margin-left: -280px;
+}
+
 /* line 15, ../../sass/_scope.scss */
 .scope {
   position: absolute;
@@ -95,6 +159,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 35, ../../sass/_scope.scss */
+#main {
+  width: 560px;
+  height: 560px;
+  margin-left: -282px;
+  margin-top: -282px;
+  border-radius: 282px;
+  border: 2px solid #bebebe;
+}
+/* line 9, ../../sass/_scope.scss */
+#main header {
+  left: 280px;
+  top: -6px;
+}
+
+/* line 39, ../../sass/_scope.scss */
 #hold {
   width: 900px;
   height: 900px;
@@ -109,7 +188,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: -6px;
 }
 
-/* line 39, ../../sass/_scope.scss */
+/* line 43, ../../sass/_scope.scss */
 #assess {
   width: 720px;
   height: 720px;
@@ -124,7 +203,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: -10px;
 }
 
-/* line 43, ../../sass/_scope.scss */
+/* line 47, ../../sass/_scope.scss */
 #trial {
   width: 560px;
   height: 560px;
@@ -139,7 +218,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: -6px;
 }
 
-/* line 47, ../../sass/_scope.scss */
+/* line 51, ../../sass/_scope.scss */
 #adopt {
   width: 320px;
   height: 320px;
@@ -154,7 +233,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: -6px;
 }
 
-/* line 4, ../../sass/_quadrant.scss */
+/* line 6, ../../sass/_quadrant.scss */
+.login .vertical-line, .login .horizontal-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  margin: 0 0 0 -300px;
+  border: none;
+  height: 2px;
+  background-color: #bebebe;
+}
+
+/* line 17, ../../sass/_quadrant.scss */
 .vertical-line, .horizontal-line {
   position: absolute;
   top: 50%;
@@ -166,7 +257,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: #bebebe;
 }
 
-/* line 16, ../../sass/_quadrant.scss */
+/* line 28, ../../sass/_quadrant.scss */
 .vertical-line {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -175,7 +266,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(90deg);
 }
 
-/* line 20, ../../sass/_quadrant.scss */
+/* line 32, ../../sass/_quadrant.scss */
 .quadrant {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -185,7 +276,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: 50%;
   left: 50%;
 }
-/* line 27, ../../sass/_quadrant.scss */
+/* line 39, ../../sass/_quadrant.scss */
 .quadrant header {
   color: #bebebe;
   font-size: 46px;
@@ -193,31 +284,59 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: 50px;
 }
 
-/* line 35, ../../sass/_quadrant.scss */
+/* line 47, ../../sass/_quadrant.scss */
 #techniques {
   margin-left: -545px;
   margin-top: -365px;
   text-align: right;
 }
 
-/* line 41, ../../sass/_quadrant.scss */
+/* line 53, ../../sass/_quadrant.scss */
 #tools {
   margin-left: 315px;
   margin-top: -365px;
   text-align: left;
 }
 
-/* line 47, ../../sass/_quadrant.scss */
+/* line 59, ../../sass/_quadrant.scss */
 #platforms {
   margin-left: -545px;
   margin-top: 315px;
   text-align: right;
 }
 
-/* line 53, ../../sass/_quadrant.scss */
+/* line 65, ../../sass/_quadrant.scss */
 #languages {
   margin-left: 315px;
   margin-top: 315px;
+  text-align: left;
+}
+
+/* line 71, ../../sass/_quadrant.scss */
+#technology {
+  margin-left: -426px;
+  margin-top: -246px;
+  text-align: right;
+}
+
+/* line 77, ../../sass/_quadrant.scss */
+#knowledge {
+  margin-left: 196px;
+  margin-top: -246px;
+  text-align: left;
+}
+
+/* line 83, ../../sass/_quadrant.scss */
+#goal {
+  margin-left: -426px;
+  margin-top: 196px;
+  text-align: right;
+}
+
+/* line 89, ../../sass/_quadrant.scss */
+#culture {
+  margin-left: 196px;
+  margin-top: 196px;
   text-align: left;
 }
 
@@ -331,34 +450,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-decoration: none;
 }
 
-/* line 18, ../../sass/_base.scss */
+/* line 19, ../../sass/_base.scss */
 input,
 textarea {
   padding: 5px;
   border: 1px solid black;
 }
 
-/* line 23, ../../sass/_base.scss */
+/* line 24, ../../sass/_base.scss */
 body {
   font-size: 16px;
   background-color: white;
 }
 
-/* line 29, ../../sass/_base.scss */
+/* line 30, ../../sass/_base.scss */
 .sidebar,
 .content {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 34, ../../sass/_base.scss */
+/* line 35, ../../sass/_base.scss */
 .content {
   position: relative;
   width: 1050px;
   height: 1050px;
 }
 
-/* line 40, ../../sass/_base.scss */
+/* line 41, ../../sass/_base.scss */
 #sidebar-switcher {
   position: absolute;
   height: 30px;
