@@ -450,34 +450,54 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-decoration: none;
 }
 
-/* line 19, ../../sass/_base.scss */
+/* line 1, ../../sass/_widget.scss */
+#alert {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+}
+
+/* line 10, ../../sass/_widget.scss */
+#alert .ui-icon {
+  float: left;
+}
+
+/* line 14, ../../sass/_widget.scss */
+#alert p {
+  padding: 10px;
+}
+
+/* line 20, ../../sass/_base.scss */
 input,
 textarea {
   padding: 5px;
   border: 1px solid black;
 }
 
-/* line 24, ../../sass/_base.scss */
+/* line 25, ../../sass/_base.scss */
 body {
   font-size: 16px;
   background-color: white;
 }
 
-/* line 30, ../../sass/_base.scss */
+/* line 31, ../../sass/_base.scss */
 .sidebar,
 .content {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 35, ../../sass/_base.scss */
+/* line 36, ../../sass/_base.scss */
 .content {
   position: relative;
   width: 1050px;
   height: 1050px;
 }
 
-/* line 41, ../../sass/_base.scss */
+/* line 42, ../../sass/_base.scss */
 #sidebar-switcher {
   position: absolute;
   height: 30px;

@@ -1,0 +1,16 @@
+#alert {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	width: 200px;
+	margin-left: -100px;
+}
+
+#alert .ui-icon {
+	float: left;
+}
+
+#alert p {
+	padding: 10px;
+}
