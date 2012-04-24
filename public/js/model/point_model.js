@@ -29,7 +29,7 @@ Model.Point = (function() {
     },
 
     set_type: function(type) {
-      this.point.type = type;
+      this.type = type;
     }
   };
 
