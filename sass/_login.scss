@@ -13,42 +13,69 @@ $main-radius-length: 280px;
 		width: $main-radius-length;
 		text-align: center;
 
+		input[type="text"],
+		input[type="password"] {
+			width: 60%;
+		}
+
 		input {
-			width: 80%;
 			margin-top: 10px;
 			margin-bottom: 10px;
 		}
 
 		input[type="submit"] {
-			border: 1px solid #951100;
+			box-shadow: 0 1px 3px #333333;;
 			border-radius: 5px;
-			box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
 			color: white;
 			padding: 12px 0 14px 0;
 			text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8);
 			width: 150px;
 			cursor: pointer;
 			font-size: 16px;
-			@include background(
-				linear-gradient(
-					top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%));
-		}
-
-		input[type="submit"]:hover {
-			background-color: #f37873;
-			@include background(
-				linear-gradient(
-					top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%));
-		}
-
-		input[type="submit"]:active {
-			background-color: #d43c28;
-			box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
-			@include background(
-				linear-gradient(
-					top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%));
 		}
 	}
+}
+
+#do-signup {
+	border: 1px solid #951100;
+	@include background(
+				linear-gradient(
+					top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%));
+}
+
+#do-signup:hover {
+	background-color: #f37873;
+	@include background(
+				linear-gradient(
+					top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%));
+}
+
+#do-signup:active {
+	background-color: #d43c28;
+	@include background(
+				linear-gradient(
+					top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%));
+}
+
+#do-login {
+	border: 1px solid #006f1d;
+	@include background(
+				linear-gradient(
+					top, #22b248 0%, #1f9639 50%, #008628 50%, #00661b 100%));
+}
+
+#do-login:hover {
+	background-color: #59bc65;
+	@include background(
+				linear-gradient(
+					top, #59bc65 0%, #3dac44 50%, #00a00a 50%, #017f09 100%));
+}
+
+#do-login:active {
+	background-color: #1e9e40;
+	@include background(
+				linear-gradient(
+					top, #1e9e40 0%, #1b8332 50%, #007323 50%, #005416 100%));
 }
 
 #login {

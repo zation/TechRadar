@@ -34,6 +34,10 @@
 
 #main {
   @include special-scope($main-radius-length, 2px, solid);
+  @include background(
+        linear-gradient(
+          left, #d4f6dd 50%, #ffe0dc 50%));
+  box-shadow: inset 0 0 140px 70px white;
 }
 
 #hold {

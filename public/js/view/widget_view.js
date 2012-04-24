@@ -13,9 +13,10 @@ View.Widget.Alert = (function() {
 
 		error: function(message) {
 			var alert = this;
+			var slide;
 			alert.el.find('p').text(message);
 			alert.el.slideDown(function() {
-				setTimeout(function() {
+				slide = setTimeout(function() {
 					alert.el.slideUp();
 				}, 2000);
 			});
