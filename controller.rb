@@ -1,14 +1,18 @@
 require 'sinatra'
 require 'redis'
 
+enable :sessions
+
 redis = Redis.new
 
 get '/' do
   File.read('login.html')
 end
 
-get '/:team_name' do
-  File.read('index.html')
+get '/:team_name' do |team_name|
+  session[:user_info] == team_name ?
+    File.read('index.html') :
+    redirect('/')
 end
 
 get '/public/*' do |path|
@@ -29,8 +33,12 @@ post '/signup' do
   password = params['password']
 
   if redis.get(team_name).nil?
-    redis.set(team_name, password).eql?('OK') ?
-        'succeed' : 'Signup failed, please try again'
+    if redis.set(team_name, password).eql?('OK')
+      session[:user_info] = team_name
+      'succeed'
+    else
+      'Signup failed, please try again'
+    end
   else
     'The team already exits, please choose another team name.'
   end
@@ -44,6 +52,11 @@ post '/login' do
   if except_password.nil?
     'The team is not exits, please signup first.'
   else
-    except_password.eql?(password) ? 'succeed' : 'The password is error, please try again.'
+    if except_password.eql?(password)
+      session[:user_info] = team_name
+     'succeed'
+    else
+     'The password is error, please try again.'
+    end
   end
 end
