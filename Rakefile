@@ -1,12 +1,10 @@
 
-namespace :server do
-  task :start do
-    system('ruby', 'controller.rb')
-  end
+task :start do
+  system('ruby', 'controller.rb')
+end
 
-  task :test do
-    system('shotgun', 'controller.rb')
-  end
+task :test do
+  system('shotgun', 'controller.rb')
 end
 
 task :db do
